@@ -1,0 +1,1 @@
+{"version":3,"file":"slider_2-1e40ffbd.js","sources":["../../../.svelte-kit/adapter-node/chunks/slider_2.js"],"sourcesContent":["const hero_img = \"/_app/immutable/assets/slider_2.b968a651.jpg\";\nexport {\n  hero_img as h\n};\n"],"names":[],"mappings":"AAAK,MAAC,QAAQ,GAAG;;;;"}

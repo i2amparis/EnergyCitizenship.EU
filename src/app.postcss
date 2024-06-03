@@ -1,0 +1,96 @@
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
+@import '@fontsource/poppins/800.css';
+@import '@fontsource/poppins/900.css';
+
+
+
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Popup tweaks */
+.mapboxgl-popup-close-button {
+display: none;
+}
+
+
+.mapboxgl-popup-tip {
+border: none !important;
+}
+
+.mapboxgl-popup-content {
+font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+padding: 0;
+width: 180px;
+
+background: none !important;
+border-radius: none !important;
+box-shadow: none !important;
+}
+
+.mapboxgl-popup-content h3 {
+background: #E2E8F0;
+color: #191919;
+margin: 0;
+padding: 10px;
+border-radius: 3px 3px 0 0;
+border-bottom: thick double #7DCA7A;
+font-weight: 700;
+margin-top: -15px;
+}
+
+.mapboxgl-popup-content h4 {
+margin: 0;
+padding: 10px;
+font-weight: 400;
+background: #E2E8F0;
+color: #191919;
+border-radius: 0px 0px 3px 3px;
+}
+
+.mapboxgl-popup-content div {
+padding: 10px;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+margin-top: 15px;
+}
+
+.mapboxgl-popup-anchor-top > : .mapboxgl-popup-tip {
+border-bottom-color: #2F4858;
+}
+
+
+.mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right, .mapboxgl-ctrl-top-left, .mapboxgl-ctrl-top-right {
+    z-index: 0!important; 
+}
+
+
+
+/* Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
