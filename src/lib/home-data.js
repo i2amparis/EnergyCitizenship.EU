@@ -2,21 +2,16 @@
 
 let home_cards = [
     {
-        title: 'Excluded',
-        imageUrl: ' ',
-        description: 'Those who are prevented from connecting to energy grids due to socio-political and/or economic reasons or in terms of geographical location (Lennon & Dunphy, 2023b).'
+        title: 'What is energy citizenship?',
+        imageUrl: 'https://cdn.pixabay.com/photo/2024/04/18/18/51/white-8704790_1280.jpg',
+        description: 'An interactive explorer of different expressions of citizen participation in the energy transition',
+        href: 'https://platform.encludeproject.eu/about'
     },
     {
-        title: 'Dispossessed',
-        imageUrl: ' ',
-        description: 'Indigenous people and other marginalized groups from whom energy resources have been unjustly taken e.g., tar sands production on Canadian First Nations land (Parson & Ray 2018) and/or extraction schemes which have resulted in their displacement, e.g., Three Gorges Dam in China (Jackson & Sleigh, 2000).'
-    },
-    {
-        title: 'Energy poor',
-        imageUrl: ' ',
-        description: 'Households unable to afford the energy needed for essential energy services. Income is important, but there is not a direct link. Not all those who suffer from monetary poverty are necessarily energy poor. Also, not all those in energy poverty are income poor (Palmer et al., 2008). \n \
-        \n \
-        A complex multidimensional issue that encompasses a broad range of factors including energy services provision, the quality of the service being provided, reliability of supply, and affordability (Bouzarovski, 2014).'
+        title: 'What examples of energy citizenship initiatives can be found across Europe?',
+        imageUrl: 'https://cdn.pixabay.com/photo/2023/08/26/17/49/dahlias-8215514_1280.jpg',
+        description: '"A map of different initiatives throughout Europe along with testimonials of their members"',
+        href: 'https://platform.encludeproject.eu/interactive_map'
     }
 ];
 

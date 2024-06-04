@@ -25,17 +25,15 @@
           <h2 class="antialiased tracking-normal font-sans text-3xl font-bold leading-[1.3] text-blue-gray-900 lg:text-5xl">How to involve citizens in the energy transition?</h2>
           <p class="antialiased font-sans text-xl font-normal leading-relaxed text-inherit mt-2 !text-gray-500 ">ENCLUDE is a Horizon 2020 EU project that aims to help the EU to achieve a just and inclusive decarbonisation by sharing and co-creating new knowledge and practices that maximise the number and diversity of citizens who are willing and able to contribute to the energy transition.</p>
         </div>
-
+        
       </div>
     </div>
 
-    <!-- <BoilerplateCards></BoilerplateCards> -->
-    <div class="flex flex-wrap justify-center mt-10">
+    <div class="mt-10 grid grid-cols-1 gap-10 lg:grid-cols-3">
       {#each home_cards as card_data}
-        <ModuleCard
-          data={card_data}
-          >
-        </ModuleCard>
+        <BoilerplateCards
+          data={card_data}>
+        </BoilerplateCards>
       {/each}
     </div>
 
