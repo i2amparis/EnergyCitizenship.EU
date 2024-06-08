@@ -9,7 +9,7 @@ const config = {
 		extend: {
 			fontFamily: {
 				sans: ['Poppins'],
-				mono: ['Monaco']
+				mono: ['Consolas']
 			  },
 		}
 	},
