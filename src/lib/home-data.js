@@ -1,5 +1,13 @@
-import module1_bg from "$lib/assets/cards/module1_bg.svg"
-import module2_bg from "$lib/assets/cards/module2_bg.svg"
+// import module1_bg from "$lib/assets/cards/module1_bg.svg"
+// import module2_bg from "$lib/assets/cards/module2_bg.svg"
+import module1_bg from "$lib/assets/cards/module1_bg.png"
+import module2_bg from "$lib/assets/cards/module2_bg.png"
+
+
+let home_hero = {
+    title:"How to involve citizens in the energy transition?",
+    desc:"ENCLUDE is a Horizon 2020 EU project that aims to help the EU to achieve a just and inclusive decarbonisation by sharing and co-creating new knowledge and practices that maximise the number and diversity of citizens who are willing and able to contribute to the energy transition."
+}
 
 let home_cards = [
     {
@@ -60,6 +68,7 @@ let test_cards = [
 
 
 export {
+    home_hero,
     home_cards,
     test_cards
 }

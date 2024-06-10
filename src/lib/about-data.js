@@ -1,3 +1,8 @@
+import access_main_icon from "$lib/assets/About/Energy Access/energy access_MAIN_CATEGORY.png"
+import consumption_main_icon from "$lib/assets/About/Energy Consumpion/Energy Consumpion_Collectivist-consumer.png"
+import production_main_icon from "$lib/assets/About/Energy Production/Energy Production_MAIN_CATEGORY.png"
+import political_main_icon from "$lib/assets/About/Political & Governance/Political & Governance_MAIN_CATEGORY.png"
+
 import access_exclude_icon from "$lib/assets/About/Energy Access/energy access_exclude.png"
 import access_dispossesed_icon from "$lib/assets/About/Energy Access/energy access_dispossessed.png"
 import access_poor_icon from "$lib/assets/About/Energy Access/energy access_energy poor.png"
@@ -18,6 +23,24 @@ import political_activist_icon from "$lib/assets/About/Political & Governance/Po
 import political_disefranchised_icon from "$lib/assets/About/Political & Governance/Political & Governance_Disenfranchised.png"
 
 
+let main_categories = [
+    {
+        name:'Access',
+        imageUrl: access_main_icon
+    },
+    {
+        name:'Consumption',
+        imageUrl: consumption_main_icon
+    },   
+    {
+        name:'Production',
+        imageUrl: production_main_icon
+    },   
+    {
+        name:'Governance',
+        imageUrl: political_main_icon
+    }       
+]
 
 let energy_access = [
     {
@@ -109,6 +132,7 @@ let political_governance = [
 ];
 
 export {
+    main_categories,
     energy_access,
     energy_consumption,
     energy_production,
