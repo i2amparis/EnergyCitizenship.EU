@@ -14,11 +14,6 @@
 
   let currentCountry = "";
 
-  // export let data;
-  // export let selection = [];
-
-  // Add a new source from our GeoJSON data and set the
-  // 'cluster' option to true. GL-JS will add the point_count property to your source data.
   map.addSource("Communities", {
     type: "geojson",
     data: ENC_GEO,
@@ -66,14 +61,6 @@
     id: "clusters",
     type: "circle",
     source: "Communities",
-    //filter: [ '!', [ 'has', 'point_count' ] ],
-    // paint: {
-    //   "circle-color": "#7DCA7A",
-    //   "circle-radius": 20,
-    //   "circle-stroke-width": 2,
-    //   "circle-opacity": 0.6,
-    //   "circle-stroke-color": "#010",
-    // },
     paint: {
       "circle-color": "#7DCA7A",
       "circle-radius": 15,
@@ -87,13 +74,11 @@
     id: "cluster-count",
     type: "symbol",
     source: "Communities",
-    //filter: [ 'has', 'point_count' ],
     layout: {
       "text-field": [
         "to-string",
         ["coalesce", ["get", "point_count_abbreviated"], 1],
       ],
-      // "text-font": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
       "text-font": ["Sniglet Regular", "Arial Unicode MS Bold"],
       "text-size": 16,
     },
@@ -104,6 +89,7 @@
   const popup = new mapboxgl.Popup({
     closeButton: false
   });
+
   // When the user moves their mouse over the state-fill layer, we'll update the
   // feature state for the feature under the mouse.
   map.on("mousemove", "state-fills", (e) => {
@@ -144,29 +130,18 @@
   map.on('click', 'state-fills', function (e) {
 
     const features = map.queryRenderedFeatures(e.point);
-
-    // Limit the number of properties we're displaying for
-    // legibility and performance
     const displayProperties = [
         'properties',
     ];
 
     const displayFeatures = features.map((feat) => {
         displayProperties.forEach((prop) => {
-            if(feat[prop].Country){
-              //console.log(feat[prop].Country)
-              //return new String(feat[prop].Country)
-              
+            if(feat[prop].Country){           
               currentCountry = feat[prop].Country
-              //
-
             }
             
         });
     });
-
-
-
 
     sidebar_show = !sidebar_show
   });
@@ -177,9 +152,6 @@
     let points = ""
 
     const features = map.queryRenderedFeatures(e.point);
-
-    // Limit the number of properties we're displaying for
-    // legibility and performance
     const displayProperties = [
         'properties',
     ];
@@ -188,13 +160,11 @@
         displayProperties.forEach((prop) => {
 
           if(feat[prop].Country){
-            //console.log(feat[prop].Country)
             country = feat[prop].Country
 
           }
 
           if (feat[prop].point_count_abbreviated){
-            //console.log(feat[prop].Country)
             points = new String(feat[prop].point_count_abbreviated)
 
           }
@@ -205,7 +175,7 @@
 
     country = country == ""?"Cluster":country
     points = points == ""?"1":points
-    let displayFeatures = "<h3>"+country+"</h3><h4>"+points+" communities</h4>"
+    let displayFeatures = "<h3>"+country+"</h3><h4>"+points+" Initiatives</h4>"
 
     // Copy coordinates array.
     const coordinates = e.features[0].geometry.coordinates.slice();
@@ -232,6 +202,4 @@
 
 </script>
 
-
-<!-- <DataSidebar bind:show={sidebar_show} country={currentCountry} selection={selection} data={data}></DataSidebar> -->
 <DataSidebar bind:show={sidebar_show} country={currentCountry}></DataSidebar>

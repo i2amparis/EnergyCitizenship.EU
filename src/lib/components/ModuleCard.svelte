@@ -9,7 +9,7 @@
 
 
     <div class="p-4 max-w-xl bg-img" style="background-image: url('{data.imageUrl}');">
-        <div class="flex rounded-lg h-full shadow-xl p-8 flex-col bg-white/10 dark:bg-black/40" >
+        <div class="flex rounded-lg h-full shadow-xl p-8 flex-col bg-white/50 dark:bg-black/50" >
             <div><span class="inline-block mb-4 text-xs font-bold capitalize border-b-2 border-primary ">{data.category}</span></div>
             <div class="flex items-center mb-4">
                 <a href="{data.href}" class="mt-3 hover:text-primary hover:rounded-md"><h2 class="text-xl lg:text-3xl font-medium font-mono"><strong>{data.title}</strong></h2></a>

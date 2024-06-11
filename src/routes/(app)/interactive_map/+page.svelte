@@ -2,8 +2,7 @@
   import { PUBLIC_MAPBOX_TOKEN } from "$env/static/public";
   import { Map, controls } from "$lib/components.js";
   import ENC_ENCLUDE from "$lib/components/_EnergyCommunitiesClusters.svelte";
-
-  
+  import IntroTour from "$lib/components/IntroTour.svelte";
   
   import { mapTipVisible } from "$lib/stores";
   const { NavigationControl } = controls;
@@ -21,6 +20,12 @@
     marker = detail.center;
   }
 </script>
+
+{#if $mapTipVisible}
+  <IntroTour></IntroTour>
+  <div class="intro-step absolute origin-center"></div>
+{/if}
+
 
 <div class="section-txt" id="map">
 

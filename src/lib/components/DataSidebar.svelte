@@ -10,7 +10,7 @@
   import { DataRetriever } from "$lib/data-retriever.js";
   import { ENCDataRetriever } from "$lib/data_handler/fetch-community-data.js"
 
-  import IntroTour from "$lib/components/IntroTour.svelte";
+  
 
   import Device from "svelte-device-info";
 
@@ -54,9 +54,6 @@
 </script>
 
 
-<IntroTour></IntroTour>
-
-<div class="intro-step absolute origin-center"></div>
 
 {#if show}
   <div
@@ -76,7 +73,7 @@
       <div class="shrink">
         <div class=" w-fit sm:w-96 summary">
           <div class="card-body">
-            <h2 class="card-title">Energy Communities</h2>
+            <h2 class="card-title">Energy Initiatives</h2>
             <p class="italic text-base">{country}</p>
 
             {#if !Device.isMobile && !Device.isPhone && !Device.isTablet}
