@@ -24,7 +24,7 @@ let home_cards = [
     }
 ];
 
-let test_cards = [
+let module_cards = [
     {
         category: "Education",
         title: 'What is energy citizenship?',
@@ -63,6 +63,40 @@ let test_cards = [
             "Elmar Kriegler",
             "Cornelia Auer"
         ]
+     },
+     {
+        category: "Data View",
+        title: 'What examples of energy citizenship initiatives can be found across Europe?',
+        imageUrl: module1_bg,
+        description: '"A map of different initiatives throughout Europe along with testimonials of their members"',
+        href: 'https://platform.encludeproject.eu/interactive_map',
+        badges:[
+            {
+                title:"Regional",
+                color:"#ffac00"
+            }
+        ],
+        authors: [
+            "Elmar Kriegler",
+            "Cornelia Auer"
+        ]
+     },
+     {
+        category: "Data View",
+        title: 'What examples of energy citizenship initiatives can be found across Europe?',
+        imageUrl: module1_bg,
+        description: '"A map of different initiatives throughout Europe along with testimonials of their members"',
+        href: 'https://platform.encludeproject.eu/interactive_map',
+        badges:[
+            {
+                title:"Regional",
+                color:"#ffac00"
+            }
+        ],
+        authors: [
+            "Elmar Kriegler",
+            "Cornelia Auer"
+        ]
      }
 ];
 
@@ -70,5 +104,5 @@ let test_cards = [
 export {
     home_hero,
     home_cards,
-    test_cards
+    module_cards
 }

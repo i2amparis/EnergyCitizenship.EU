@@ -1,7 +1,7 @@
 
 <script>
     import ModuleCard from "$lib/components/ModuleCard.svelte";
-    import { test_cards } from "$lib/home-data"
+    import { module_cards } from "$lib/home-data"
 
 </script>
 <!-- <div class="absolute top-0 z-[-2] w-full h-full bg-white-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(120,119,198,0))]"></div> -->
@@ -10,7 +10,7 @@
     <div class="flex">
         
         <div class="mt-10 grid grid-cols-1 gap-2 lg:grid-cols-2 ">
-            {#each test_cards as card_data}
+            {#each module_cards as card_data}
             <ModuleCard
                 data={card_data}>
             </ModuleCard>
