@@ -23,13 +23,10 @@
                 <div class="prose-sm sm:prose ">
                     "{quote}"
                 </div>
-                <div class="flex justify-between mt-4 p-4">
-                    <div></div>
-                    <div class="flex flex-shrink-0 gap-2">
+                <div class="lg:max-w-xs flex flex-row flex-wrap gap-2 p-4">
                     {#each badges as badge}
                         <div class="badge badge-outline"> {badge} </div>
                     {/each}
-                    </div>
                 </div>
                 
             </li>

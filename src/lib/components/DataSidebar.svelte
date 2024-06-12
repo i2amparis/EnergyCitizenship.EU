@@ -189,13 +189,19 @@
                     </svg>
                 Filters</button
               >
-              <button class="btn" onclick="my_modal_6.showModal()"
-                > 
-                <svg viewBox="0 0 24 18" aria-hidden="true" class="w-8 h-8 scale-75 text-gray-600">
-                  <path d="M0 18h8.7v-5.555c-.024-3.906 1.113-6.841 2.892-9.68L6.452 0C3.188 2.644-.026 7.86 0 12.469V18zm12.408 0h8.7v-5.555C21.083 8.539 22.22 5.604 24 2.765L18.859 0c-3.263 2.644-6.476 7.86-6.451 12.469V18z" fill="currentColor" />
-                </svg>
-                Quotes</button
-              >
+
+              {#if hasQuotes(country)}
+                <button class="btn" onclick="my_modal_6.showModal()"
+                  > 
+                  <svg viewBox="0 0 24 18" aria-hidden="true" class="w-8 h-8 scale-75 text-gray-600">
+                    <path d="M0 18h8.7v-5.555c-.024-3.906 1.113-6.841 2.892-9.68L6.452 0C3.188 2.644-.026 7.86 0 12.469V18zm12.408 0h8.7v-5.555C21.083 8.539 22.22 5.604 24 2.765L18.859 0c-3.263 2.644-6.476 7.86-6.451 12.469V18z" fill="currentColor" />
+                  </svg>
+                  Quotes</button
+                >
+              {/if}
+
+
+
               <dialog
                 id="my_modal_5"
                 class="modal modal-bottom sm:modal-middle"
@@ -217,7 +223,7 @@
                 class="modal modal-bottom sm:modal-middle"
               >
                 <div class=" modal-box ">
-                  Quotes
+                  <Quotes {country}></Quotes>
 
                   <div class="modal-action">
                     <form method="dialog">
