@@ -48,8 +48,8 @@
             <img class="w-40" src="{dialogues_logo}" alt="Logo" />
             <img class="w-36" src="{greta_logo}" alt="Logo" />
             <img class="w-16" src="{ec_logo}" alt="Logo" />
-            <img class="w-32 h-16" src="{energy_logo}" alt="Logo" />
-            <img class="w-30 h-16" src="{transformer_logo}" alt="Logo" />
+            <img class="w-32" src="{energy_logo}" alt="Logo" style="max-height:4rem;"/>
+            <img class="w-30" src="{transformer_logo}" alt="Logo" style="max-height:4rem;"/>
       
         </div>
     
