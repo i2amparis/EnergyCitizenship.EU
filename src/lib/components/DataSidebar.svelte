@@ -218,20 +218,22 @@
               </dialog>
 
 
-              <dialog
-                id="my_modal_6"
-                class="modal modal-bottom sm:modal-middle"
-              >
-                <div class=" modal-box ">
-                  <Quotes {country}></Quotes>
+              {#if hasQuotes(country)}
+                <dialog
+                  id="my_modal_6"
+                  class="modal modal-bottom sm:modal-middle"
+                >
+                  <div class=" modal-box ">
+                    <Quotes {country}></Quotes>
 
-                  <div class="modal-action">
-                    <form method="dialog">
-                      <button class="btn">Close</button>
-                    </form>
+                    <div class="modal-action">
+                      <form method="dialog">
+                        <button class="btn">Close</button>
+                      </form>
+                    </div>
                   </div>
-                </div>
-              </dialog>
+                </dialog>
+                {/if}
             </div>
             {/if}
           </div>
