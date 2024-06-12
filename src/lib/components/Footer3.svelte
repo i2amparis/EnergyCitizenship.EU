@@ -32,8 +32,7 @@
           <div class="flex">
             <img class="w-24" src="{eu_flag}" alt="Logo" />
             <p class="ml-5 text-xs text-inherit-800">
-                The ENCLUDE project has received funding from the European Union’s Horizon 2020 Research and Innovation Programme under grant agreement No 101022791.
-            
+                The ENCLUDE, DIALOGUES, EC2, and ENERGY PROSPECTS projects have received funding from the European Union’s Horizon 2020 Research and Innovation Programme under grant agreements No 101022791, 101022585, 101022565, and 101022492, respectively.
             </p>
           </div>
         </div>
@@ -42,14 +41,14 @@
 
       <div class="space-y-2">
 
-        <div class="grid grid-cols-3  gap-6 mb-6 text-sm justify-items-center place-content-center">
+        <div class="grid grid-cols-2  gap-6 mb-6 text-sm justify-items-center place-content-center">
 
-            <img class="w-36" src="{enclude_logo}" alt="Logo" />
-            <img class="w-40" src="{dialogues_logo}" alt="Logo" />
-            <img class="w-36" src="{greta_logo}" alt="Logo" />
-            <img class="w-16" src="{ec_logo}" alt="Logo" />
-            <img class="w-32" src="{energy_logo}" alt="Logo" style="max-height:4rem;"/>
-            <img class="w-30" src="{transformer_logo}" alt="Logo" style="max-height:4rem;"/>
+            <a href="https://encludeproject.eu"><img class="w-36" src="{enclude_logo}" alt="Logo" /></a>
+            <a href="https://www.dialoguesproject.eu"><img class="w-40" src="{dialogues_logo}" alt="Logo" /></a>
+            <a href="https://ec2project.eu"><img class="w-16" src="{ec_logo}" alt="Logo" /></a>
+            <a href="https://www.energyprospects.eu"><img class="w-32" src="{energy_logo}" alt="Logo" style="max-height:4rem;"/></a>
+            <!-- <img class="w-36" src="{greta_logo}" alt="Logo" /> -->
+            <!-- <img class="w-30" src="{transformer_logo}" alt="Logo" style="max-height:4rem;"/> -->
       
         </div>
     
@@ -103,14 +102,16 @@
       <p class="text-sm text-inherit-600">
         Copyright © {currentYear} ENCLUDE
       </p>
+      <!-- 
       <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
         <li>
           <a href="https://encludeproject.eu/privacy-cookies-policy" class="text-sm text-inherit-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy & Cookies Policy</a>
         </li>
-        <!-- <li>
+        <li>
           <a href="/" class="text-sm text-inherit-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Terms &amp; Conditions</a>
-        </li> -->
+        </li>
       </ul>
+      -->
     </div>
   </div>
 </div>
