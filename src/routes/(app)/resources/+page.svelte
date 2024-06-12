@@ -1,7 +1,7 @@
 
 <script>
     import ModuleCard from "$lib/components/ModuleCard.svelte";
-    import { module_cards } from "$lib/home-data"
+    import { resources_cards } from "$lib/resources-data"
 
     let src = "https://images.unsplash.com/photo-1549443442-e981d27df640?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 
@@ -19,9 +19,10 @@
     <section class="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
         <div class="mx-auto max-w-2xl lg:max-w-none">
           <h2 id="testimonial-heading" class="text-2xl font-bold tracking-tight text-gray-900"><span class="has-callout">Resources</span></h2>
-    
+          <p class="text-l tracking-tight text-gray-900">A collection of resources for organizing an energy citizenship initiative</p>
+
           <div class="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2 ">
-              {#each module_cards as card_data}
+              {#each resources_cards as card_data}
               <ModuleCard
                   data={card_data}>
               </ModuleCard>

@@ -32,7 +32,7 @@ let home_cards = [
 let module_cards = [
     {
         category: "Learn",
-        title: 'How can we define energy citizenship?',
+        title: 'What is energy citizenship?',
         // imageUrl: module2_bg,
         description: 'An interactive explorer of different expressions of citizen participation in the energy transition',
         href: '/about',
@@ -73,7 +73,7 @@ let module_cards = [
         category: "Explore",
         title: 'What is the role of energy citizenship in the European energy transition?',
         // imageUrl: module1_bg,
-        description: 'A quantification of the future impacts of energy citizenship on the energy transition',
+        description: 'An evaluation of the future impacts of energy citizenship on the energy transition',
         href: '/impacts',
         badges:[
             {
@@ -86,7 +86,8 @@ let module_cards = [
             }
         ],
         authors: [
-            "ENCLUDE"
+            "ENCLUDE",
+            "ENERGY PROSPECTS",
         ]
      },
      {
@@ -99,11 +100,17 @@ let module_cards = [
             {
                 title:"Citizens",
                 color:"#E4572E"
+            },
+            {
+                title:"Policymakers",
+                color:"#EDB230"
             }
         ],
         authors: [
             "ENCLUDE",
-            "EC2"
+            "DIALOGUES",
+            "EC2",
+            "ENERGY PROSPECTS"
         ]
      }
 ];
