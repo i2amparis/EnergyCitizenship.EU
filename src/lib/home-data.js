@@ -39,7 +39,7 @@ let module_cards = [
         badges: [
             {
                 title:"Academics",
-                color:"#FF5714"
+                color:"#4281A4"
             },
         ],
         authors: [
@@ -58,11 +58,11 @@ let module_cards = [
         badges:[
             {
                 title:"Academics",
-                color:"#FF5714"
+                color:"#4281A4"
             },
             {
                 title:"Policymakers",
-                color:"#E8AA14"
+                color:"#EDB230"
             }
         ],
         authors: [
@@ -78,11 +78,11 @@ let module_cards = [
         badges:[
             {
                 title:"Academics",
-                color:"#FF5714"
+                color:"#4281A4"
             },
             {
                 title:"Policymakers",
-                color:"#E8AA14"
+                color:"#EDB230"
             }
         ],
         authors: [
@@ -98,7 +98,7 @@ let module_cards = [
         badges:[
             {
                 title:"Citizens",
-                color:"#1BE7FF"
+                color:"#E4572E"
             }
         ],
         authors: [
