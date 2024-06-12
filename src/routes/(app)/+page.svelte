@@ -59,7 +59,7 @@
           This website collects research results from four Research and Innovation projects on energy citizenship funded by the Horizon 2020 programme of the European Union.
           Results have been curated into four pathways for different audiences which are presented below.
         </p>
-        <p>Explore and let us know your feedback!</p>
+        <p>Explore and let us know your <a href="https://encludeproject.eu/form/enclude-platform-survey" class=" font-medium text-blue-600 dark:text-blue-500 hover:underline">feedback!</a></p>
       </div>
       
       <!-- <a href="#" class="mt-6 inline-block w-full rounded-md border border-transparent bg-gray-900 px-8 py-3 font-medium text-white hover:bg-cyan-800 sm:w-auto">Get access to our one-time sale</a> -->
