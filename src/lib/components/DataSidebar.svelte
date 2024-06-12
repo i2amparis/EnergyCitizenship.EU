@@ -28,6 +28,7 @@
 
   let filtered_data;
   let show_filters = false;
+  let show_quotes = false;
 
   $: {
     filtered_data = data.getJsonSubsetBasedOnCountry(country);
@@ -119,6 +120,33 @@
                     Open Filters
                   </div>
                 </label>
+
+
+
+                <!--  -->
+
+                <label
+                  class="swap swap-rotate text-base p-1 border-dashed border-2 rounded-lg hover:bg-slate-400"
+                >
+                  <!-- this hidden checkbox controls the state -->
+                  <input type="checkbox" bind:checked={show_quotes} />
+
+                  <div class="swap-on flex items-center">
+                    <svg viewBox="0 0 24 18" aria-hidden="true" class="w-8 h-8 scale-75 rotate-180 text-gray-600">
+                      <path d="M0 18h8.7v-5.555c-.024-3.906 1.113-6.841 2.892-9.68L6.452 0C3.188 2.644-.026 7.86 0 12.469V18zm12.408 0h8.7v-5.555C21.083 8.539 22.22 5.604 24 2.765L18.859 0c-3.263 2.644-6.476 7.86-6.451 12.469V18z" fill="currentColor" />
+                    </svg>
+                    Close Quotes
+                  </div>
+                  <div class="swap-off flex items-center">
+                    <svg viewBox="0 0 24 18" aria-hidden="true" class="w-8 h-8 scale-75 text-gray-600">
+                      <path d="M0 18h8.7v-5.555c-.024-3.906 1.113-6.841 2.892-9.68L6.452 0C3.188 2.644-.026 7.86 0 12.469V18zm12.408 0h8.7v-5.555C21.083 8.539 22.22 5.604 24 2.765L18.859 0c-3.263 2.644-6.476 7.86-6.451 12.469V18z" fill="currentColor" />
+                    </svg>
+                    Open Quotes
+                  </div>
+                </label>
+
+
+
               </div>
             {/if}
             {#if Device.isMobile || Device.isPhone || Device.isTablet}
@@ -141,12 +169,35 @@
                     </svg>
                 Filters</button
               >
+              <button class="btn" onclick="my_modal_6.showModal()"
+                > 
+                <svg viewBox="0 0 24 18" aria-hidden="true" class="w-8 h-8 scale-75 text-gray-600">
+                  <path d="M0 18h8.7v-5.555c-.024-3.906 1.113-6.841 2.892-9.68L6.452 0C3.188 2.644-.026 7.86 0 12.469V18zm12.408 0h8.7v-5.555C21.083 8.539 22.22 5.604 24 2.765L18.859 0c-3.263 2.644-6.476 7.86-6.451 12.469V18z" fill="currentColor" />
+                </svg>
+                Quotes</button
+              >
               <dialog
                 id="my_modal_5"
                 class="modal modal-bottom sm:modal-middle"
               >
                 <div class=" modal-box ">
                   <Filters {data} bind:selection></Filters>
+
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+
+
+              <dialog
+                id="my_modal_6"
+                class="modal modal-bottom sm:modal-middle"
+              >
+                <div class=" modal-box ">
+                  Quotes
 
                   <div class="modal-action">
                     <form method="dialog">
@@ -246,7 +297,7 @@
     }
   }
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1100px) {
     .fixed-aside {
       width: 100%;
       max-width: none;

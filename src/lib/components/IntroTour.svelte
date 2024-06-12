@@ -9,8 +9,12 @@
 
     onMount(async () => {
 
-        const module = await import('shepherd.js');
-        Shepherd = module.default;
+      const tourSeen = localStorage.getItem('tourSeen');
+      if (tourSeen) {
+          return; 
+      }
+      const module = await import('shepherd.js');
+      Shepherd = module.default;
 
       tour = new Shepherd.Tour({
         useModalOverlay: true,
@@ -24,21 +28,29 @@
       });
   
       tour.addStep({
-        title: 'Welcome to Our App!',
-        text: 'Click a highlighted country to see its communities',
+        title: 'Welcome to the Map of Energy Citizenship',
+        text: 'Click a highlighted country to see the initiatives related',
         attachTo: {
           element: '.intro-step',
           
         },
         buttons: [
           {
-            action: tour.cancel,
+            action: function() {
+                tour.cancel();
+                localStorage.setItem('tourSeen', 'true');
+            },
             classes: 'shepherd-button-secondary',
             text: 'Exit'
           },
           {
-            action: tour.next,
-            text: 'Next'
+            action: function() {
+                tour.next();
+                if (tour.steps.length === tour.currentStep.index + 1) {
+                    localStorage.setItem('tourSeen', 'true'); 
+                }
+            },
+            text: 'Finish'
           }
         ]
       });
@@ -49,7 +61,7 @@
       //   title: 'Communities Sidebar',
       //   text: 'Here you will find every energy community of the country... etc',
       //   attachTo: {
-      //     element: '.sidebar-step',
+      //     element: '.second-step',
       //     on: 'center'
       //   },
       //   buttons: [

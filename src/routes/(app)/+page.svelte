@@ -59,7 +59,7 @@
     <div class="mx-auto max-w-2xl lg:max-w-none">
       <h2 id="testimonial-heading" class="text-2xl font-bold tracking-tight text-gray-900"><span class="has-callout">Features to explore :</span></h2>
 
-      <div class="mt-10 grid grid-cols-1 gap-2 lg:grid-cols-2 ">
+      <div class="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2 ">
           {#each module_cards as card_data}
           <ModuleCard
               data={card_data}>

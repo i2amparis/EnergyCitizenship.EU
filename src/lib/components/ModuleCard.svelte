@@ -8,10 +8,10 @@
 
 
 
-    <div class="p-4 max-w-xl bg-img" style="background-image: url('{data.imageUrl}');">
-        <div class="flex rounded-lg h-full shadow-xl p-8 flex-col bg-white/50 dark:bg-black/10 dark:text-black" >
+    <div class=" max-w-xl bg-img backdrop-blur-sm" style="background-image: url('{data.imageUrl}');">
+        <div class="flex rounded-lg h-full shadow-xl p-8 flex-col bg-white/20 dark:bg-black/10 dark:text-black" >
             <div><span class="inline-block mb-4 text-xs font-bold capitalize border-b-2 border-primary ">{data.category}</span></div>
-            <div class="flex items-center mb-4">
+            <div class="flex items-center mb-4 ">
                 <a href="{data.href}" class="mt-3 hover:text-primary hover:rounded-md"><h2 class="text-xl lg:text-3xl font-medium font-mono"><strong>{data.title}</strong></h2></a>
             </div>
             <div class="flex flex-col justify-between flex-grow pb-8 min-[370px]:border-b-2">

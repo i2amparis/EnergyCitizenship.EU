@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte';
   import { PUBLIC_MAPBOX_TOKEN } from "$env/static/public";
   import { Map, controls } from "$lib/components.js";
   import ENC_ENCLUDE from "$lib/components/_EnergyCommunitiesClusters.svelte";
@@ -11,6 +12,7 @@
   let marker = center;
   let zoom = 3.8;
   let mapComponent;
+
 
   function recentre({ detail }) {
     center = detail.center;
