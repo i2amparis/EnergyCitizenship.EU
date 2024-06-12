@@ -10,7 +10,7 @@
 <div class="relative overflow-hidden min-h-screen">
     <div aria-hidden="true" class="absolute inset-0">
       <div class="absolute inset-0 mx-auto  overflow-hidden">
-          <img src="{src}" alt="image" class=" h-screen w-full object-cover object-center">
+          <img src="{src}" alt="" class="h-full sm:h-screen w-full object-cover object-center">
       </div>
       <!-- <div class="absolute inset-0 bg-white bg-opacity-75"></div> -->
       <div class="absolute inset-0 bg-gradient-to-t from-white via-gray-200 dark:from-gray-900 dark:via-gray-100"></div>
