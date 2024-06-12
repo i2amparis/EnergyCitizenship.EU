@@ -1,6 +1,9 @@
 <script>
   import { fly } from "svelte/transition";
   import Filters from "./filters.svelte";
+  import Quotes from "./quotes.svelte";
+
+  import { hasQuotes } from "$lib/quotes-data";
   
   import { getTechnologiesFilteredData } from "$lib/filters-data.js";
   import { getChallengesFilteredData } from "$lib/filters-data.js";
@@ -52,6 +55,25 @@
       filtered_data = getGoalsFilteredData(filtered_data, selection["Goals"]);
     }
   }
+
+  
+
+  // $: if (show_filters) {
+  //   show_quotes = false;
+  // }
+
+  $: if (show_quotes) {
+    show_filters = false;
+  }
+
+  function toggleSidebar() {
+    show = !show;
+    if (!show) {
+      show_filters = false;
+      show_quotes = false;
+    }
+  }
+
 </script>
 
 
@@ -59,18 +81,16 @@
 {#if show}
   <div
     data-theme="emerald"
-    class="fixed-aside !overflow-hidden !bg-white"
+    class="fixed-aside !overflow-hidden  !bg-white"
     transition:fly={{ x: 250, opacity: 1 }}
   >
     <button
-      on:click={() => {
-        show = false;
-      }}
+      on:click={toggleSidebar}
       class="btn btn-md btn-circle absolute right-5 top-5"
       >✕
     </button>
 
-    <div class="flex flex-col md:flex-row overflow-hidden">
+    <div class="flex flex-col md:flex-row ">
       <div class="shrink">
         <div class=" w-fit sm:w-96 summary">
           <div class="card-body">
@@ -124,7 +144,7 @@
 
 
                 <!--  -->
-
+                {#if hasQuotes(country)}
                 <label
                   class="swap swap-rotate text-base p-1 border-dashed border-2 rounded-lg hover:bg-slate-400"
                 >
@@ -144,7 +164,7 @@
                     Open Quotes
                   </div>
                 </label>
-
+                {/if}
 
 
               </div>
@@ -270,6 +290,14 @@
           transition:fly={{ x: 250, opacity: 1 }}
         >
           <Filters {data} bind:selection></Filters>
+        </div>
+      {/if}
+      {#if show_quotes}
+        <div
+          class="md:relative md:ml-10 sm:ml-12 md:mt-20 md:bg-inherit md:w-auto bg-white w-80 sm:w-96 mt-36 ml-5 absolute p-5 border-x-2 max-w-xl"
+          transition:fly={{ x: 250, opacity: 1 }}
+        >
+          <Quotes {country}></Quotes>
         </div>
       {/if}
     </div>

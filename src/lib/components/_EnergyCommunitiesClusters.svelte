@@ -202,4 +202,6 @@
 
 </script>
 
-<DataSidebar bind:show={sidebar_show} country={currentCountry}></DataSidebar>
+{#if sidebar_show}
+  <DataSidebar bind:show={sidebar_show} country={currentCountry}></DataSidebar>
+{/if}

@@ -1,14 +1,15 @@
 <script>
 
     export let data;
-    export let text_dark;
+    // export let text_dark;
 
 </script>
 
 
 
 
-    <div class=" max-w-xl bg-img backdrop-blur-sm" style="background-image: url('{data.imageUrl}');">
+    <!-- <div class=" max-w-xl bg-img backdrop-blur-sm" style="background-image: url('{data.imageUrl}');"> -->
+    <div class=" max-w-xl bg-img backdrop-blur-sm">
         <div class="flex rounded-lg h-full shadow-xl p-8 flex-col bg-white/20 dark:bg-black/10 dark:text-black" >
             <div><span class="inline-block mb-4 text-xs font-bold capitalize border-b-2 border-primary ">{data.category}</span></div>
             <div class="flex items-center mb-4 ">
