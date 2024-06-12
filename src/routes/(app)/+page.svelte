@@ -57,7 +57,7 @@
 
   <section class="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
     <div class="mx-auto max-w-2xl lg:max-w-none">
-      <h2 id="testimonial-heading" class="text-2xl font-bold tracking-tight text-gray-900"><span class="has-callout">Features to explore :</span></h2>
+      <h2 id="testimonial-heading" class="text-2xl font-bold tracking-tight text-gray-900"><span class="has-callout">Pathways to explore:</span></h2>
 
       <div class="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2 ">
           {#each module_cards as card_data}

@@ -6,7 +6,12 @@ import module2_bg from "$lib/assets/cards/module2_bg.png"
 
 let home_hero = {
     title:"How to involve citizens in the energy transition?",
-    desc:"ENCLUDE is a Horizon 2020 EU project that aims to help the EU to achieve a just and inclusive decarbonisation by sharing and co-creating new knowledge and practices that maximise the number and diversity of citizens who are willing and able to contribute to the energy transition."
+    desc:"Energy citizenship is a term used by activists, academics, and increasingly, \
+    policymakers to conceptualise the potential roles that citizens could (or should) \
+    play within the energy system. This website collects research results from four Research and Innovation \
+    projects on energy citizenship funded by the Horizon 2020 programme of the European Union.\
+    Results have been curated into four pathways for different audiences which are presented below. \
+    Explore and let us know your feedback!"
 }
 
 let home_cards = [
@@ -26,76 +31,79 @@ let home_cards = [
 
 let module_cards = [
     {
-        category: "Education",
-        title: 'What is energy citizenship?',
-        imageUrl: module2_bg,
+        category: "Learn",
+        title: 'How can we define energy citizenship?',
+        // imageUrl: module2_bg,
         description: 'An interactive explorer of different expressions of citizen participation in the energy transition',
-        href: 'https://platform.encludeproject.eu/about',
+        href: '/about',
         badges: [
             {
-                title:"Regional",
-                color:"#ffac00"
+                title:"Academics",
+                color:"#FF5714"
             },
-            {
-                title:"Finance",
-                color:"#b035c9"
-            }
         ],
         authors: [
-            "Elmar Kriegler",
-            "Cornelia Auer",
-            "Lavinia Baumstark",
+            "ENCLUDE",
+            "DIALOGUES",
+            "EC2",
+            "ENERGY PROSPECTS",
         ]
     },
     {
-        category: "Data View",
+        category: "Explore",
         title: 'What examples of energy citizenship initiatives can be found across Europe?',
-        imageUrl: module1_bg,
-        description: '"A map of different initiatives throughout Europe along with testimonials of their members"',
-        href: 'https://platform.encludeproject.eu/interactive_map',
+        // imageUrl: module1_bg,
+        description: 'A map of different initiatives throughout Europe along with testimonials of their members',
+        href: '/interactive_map',
         badges:[
             {
-                title:"Regional",
-                color:"#ffac00"
+                title:"Academics",
+                color:"#FF5714"
+            },
+            {
+                title:"Policymakers",
+                color:"#E8AA14"
             }
         ],
         authors: [
-            "Elmar Kriegler",
-            "Cornelia Auer"
+            "ENCLUDE"
         ]
      },
      {
-        category: "Data View",
-        title: 'What examples of energy citizenship initiatives can be found across Europe?',
-        imageUrl: module1_bg,
-        description: '"A map of different initiatives throughout Europe along with testimonials of their members"',
-        href: 'https://platform.encludeproject.eu/interactive_map',
+        category: "Explore",
+        title: 'What is the role of energy citizenship in the European energy transition?',
+        // imageUrl: module1_bg,
+        description: 'A quantification of the future impacts of energy citizenship on the energy transition',
+        href: '/impacts',
         badges:[
             {
-                title:"Regional",
-                color:"#ffac00"
+                title:"Academics",
+                color:"#FF5714"
+            },
+            {
+                title:"Policymakers",
+                color:"#E8AA14"
             }
         ],
         authors: [
-            "Elmar Kriegler",
-            "Cornelia Auer"
+            "ENCLUDE"
         ]
      },
      {
-        category: "Data View",
-        title: 'What examples of energy citizenship initiatives can be found across Europe?',
-        imageUrl: module1_bg,
-        description: '"A map of different initiatives throughout Europe along with testimonials of their members"',
-        href: 'https://platform.encludeproject.eu/interactive_map',
+        category: "Learn",
+        title: 'How can I organize an initiative in the context of the energy transition?',
+        // imageUrl: module1_bg,
+        description: 'A collection of resources for organizing an energy citizenship initiative',
+        href: '/resources',
         badges:[
             {
-                title:"Regional",
-                color:"#ffac00"
+                title:"Citizens",
+                color:"#1BE7FF"
             }
         ],
         authors: [
-            "Elmar Kriegler",
-            "Cornelia Auer"
+            "ENCLUDE",
+            "EC2"
         ]
      }
 ];
