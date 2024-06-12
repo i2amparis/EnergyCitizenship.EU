@@ -29,7 +29,7 @@ export let data;
       cursor: pointer;
       padding: 10px;
       font-family: "Space Mono", monospace;
-      font-size: 22px;
+      font-size: 1.1rem;
       transition: .3s;
       border-bottom: 1px solid;
       user-select: none;
