@@ -52,7 +52,16 @@
   <section class="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-32 text-center sm:px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:max-w-none">
       <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">{home_hero.title}</h2>
-      <p class="mx-auto mt-4 max-w-2xl text-xl text-gray-600">{home_hero.desc}</p>
+      <div class="prose mx-auto mt-4 max-w-3xl text-xl text-gray-600">
+        <p>Energy citizenship is a term used by activists, academics, and increasingly, policymakers to conceptualise the potential roles that citizens could (or should) play within the energy system. 
+          </p>
+        <p>
+          This website collects research results from four Research and Innovation projects on energy citizenship funded by the Horizon 2020 programme of the European Union.
+          Results have been curated into four pathways for different audiences which are presented below.
+        </p>
+        <p>Explore and let us know your feedback!</p>
+      </div>
+      
       <!-- <a href="#" class="mt-6 inline-block w-full rounded-md border border-transparent bg-gray-900 px-8 py-3 font-medium text-white hover:bg-cyan-800 sm:w-auto">Get access to our one-time sale</a> -->
     </div>
   </section>
