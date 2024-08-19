@@ -62,15 +62,30 @@
   //   show_quotes = false;
   // }
 
-  $: if (show_quotes) {
-    show_filters = false;
+  // $: if (show_quotes) {
+  //   show_filters = false;
+  // }
+
+  let activeSidebar = null; // "filters", "quotes", or null
+
+  $: show_filters = activeSidebar === "filters";
+  $: show_quotes = activeSidebar === "quotes";
+
+  function toggleFiltersSidebar(sidebar) {
+    if (activeSidebar === sidebar) {
+      activeSidebar = null;
+    } else {
+      activeSidebar = sidebar;
+    }
   }
 
   function toggleSidebar() {
     show = !show;
     if (!show) {
-      show_filters = false;
-      show_quotes = false;
+      // show_filters = false;
+      // show_quotes = false;
+
+      activeSidebar = null;
     }
   }
 
@@ -81,7 +96,7 @@
 {#if show}
   <div
     data-theme="emerald"
-    class="fixed-aside !overflow-hidden  !bg-white"
+    class="fixed-aside  !bg-white"
     transition:fly={{ x: 250, opacity: 1 }}
   >
     <button
@@ -103,7 +118,7 @@
                   class="swap swap-rotate text-base p-1 border-dashed border-2 rounded-lg hover:bg-slate-400"
                 >
                   <!-- this hidden checkbox controls the state -->
-                  <input type="checkbox" bind:checked={show_filters} />
+                  <input type="checkbox" bind:checked={show_filters} on:change={() => toggleFiltersSidebar('filters')} style="display: none;" />
 
                   <div class="swap-on flex items-center">
                     <svg
@@ -149,7 +164,7 @@
                   class="swap swap-rotate text-base p-1 border-dashed border-2 rounded-lg hover:bg-slate-400"
                 >
                   <!-- this hidden checkbox controls the state -->
-                  <input type="checkbox" bind:checked={show_quotes} />
+                  <input type="checkbox" bind:checked={show_quotes} on:change={() => toggleFiltersSidebar('quotes')} style="display: none;" />
 
                   <div class="swap-on flex items-center">
                     <svg viewBox="0 0 24 18" aria-hidden="true" class="w-8 h-8 scale-75 rotate-180 text-gray-600">
