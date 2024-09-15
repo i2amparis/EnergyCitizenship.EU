@@ -1,16 +1,32 @@
+<script>
+    import Toc from 'svelte-toc'
+</script>
 
-<article class="prose lg:prose-xl max-w-4xl m-auto mt-6 p-6">
-    <h2>
+<div class="flex m-auto place-content-center">
+<div class="max-w-md">
+<Toc 
+    --toc-desktop-aside-margin="10em 0 0 0"
+    --toc-desktop-sticky-top="3em"
+    --toc-desktop-width="2em"    
+/>
+</div>
+
+<!-- <article class="prose lg:prose-xl max-w-4xl m-auto mt-6 p-6">
+    <h2 class="toc-exclude">
         Driving factors and citizen personas towards the further growth and
         diffusion of Collective Energy Initiatives in Europe by 2030
     </h2>
-</article>
+</article> -->
 
-<article class="prose lg:prose-xl max-w-3xl m-auto mb-6 p-6">
+<article class="prose lg:prose-xl max-w-5xl m-auto mb-6 p-6">
     
+    <h2 class="toc-exclude">
+        Driving factors and citizen personas towards the further growth and
+        diffusion of Collective Energy Initiatives in Europe by 2030
+    </h2>
 
     <section>
-    <h1>Introduction</h1>
+    <h2>Introduction</h2>
     <p>
         As Europe transitions to a sustainable energy system, achieving climate
         neutrality by 2050 hinges on the rise of collaborative <em
@@ -127,11 +143,11 @@
     <section class="mt-12">
 
 
-    <h1>Research/ Policy questions</h1>
-    <h2>
+    <h2>Research/ Policy questions</h2>
+    <h3>
         What are potential driving factors that could support the diffusion and
         further growth of Collective Energy Initiatives in Europe by 2030?
-    </h2>
+    </h3>
     <p>
         Findings revealed a strong correlation between population density and
         projected growth of the CEIs under study. Densely populated areas
@@ -245,10 +261,10 @@
     </section>
 
     <section class="mt-12">
-    <h1>
+    <h2>
         What is the emission reduction (decarbonization) potential related to
         the further growth of CEIs around Europe?
-    </h1>
+    </h2>
     <p>
         As expected, the most significant emission reduction (decarbonization)
         potential is correlated with increased participation in energy
@@ -291,10 +307,10 @@
     
 
     <section class="mt-12">
-    <h1>
+    <h2>
         Citizen personas: what individual motivations are driving the further
         growth of Collective Energy Initiatives around Europe?
-    </h1>
+    </h2>
     <p>
         Leveraging ENCLUDE&rsquo;s questionnaire on members of CEIs, delving
         into both individual traits and collective aspects of life in the
@@ -557,3 +573,5 @@
     </section>
 
 </article>
+
+</div>

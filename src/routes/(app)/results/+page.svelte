@@ -2,6 +2,7 @@
     import BoilerplateCards from "$lib/components/BoilerplateCards.svelte";
 
     import { results_cards } from "$lib/results-data";
+    
 </script>
 
 
