@@ -74,7 +74,7 @@ let module_cards = [
         title: 'What is the role of energy citizenship in the European energy transition?',
         // imageUrl: module1_bg,
         description: 'An evaluation of the future impacts of energy citizenship on the energy transition',
-        href: '/impacts',
+        href: '/modules',
         badges:[
             {
                 title:"Academics",
@@ -95,7 +95,7 @@ let module_cards = [
         title: 'How can I organize an initiative in the context of the energy transition?',
         // imageUrl: module1_bg,
         description: 'A collection of resources for organizing an energy citizenship initiative',
-        href: '/resources',
+        href: '/modules',
         badges:[
             {
                 title:"Citizens",

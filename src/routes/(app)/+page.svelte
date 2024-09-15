@@ -43,10 +43,13 @@
           transition:fade={{ delay:500, duration:800, easing:cubicInOut }}  
           src="{src}" alt="Carousel" class=" h-full sm:h-screen w-full object-cover object-center">
       {/key} -->
-      <img src="{heroImg}" alt="Carousel" class=" h-full sm:h-screen w-full object-cover object-center">
+
+
+      <img src="{heroImg}" alt="Carousel" class=" h-full 3xl:h-screen w-full object-cover object-center">
+
     </div>
     <!-- <div class="absolute inset-0 bg-white bg-opacity-75"></div> -->
-    <div class="absolute inset-0 bg-gradient-to-t from-white via-gray-200 dark:from-gray-900 dark:via-gray-100"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-white via-gray-200 dark:from-gray-700 dark:via-slate-600"></div>
   </div>
 
   <section class="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-32 text-center sm:px-6 lg:px-8">
@@ -59,7 +62,7 @@
           This website collects research results from four Research and Innovation projects on energy citizenship funded by the Horizon 2020 programme of the European Union.
           Results have been curated into four pathways for different audiences which are presented below.
         </p>
-        <p>Explore and let us know your <a href="https://encludeproject.eu/form/enclude-platform-survey" class=" font-medium text-blue-600 dark:text-blue-500 hover:underline">feedback!</a></p>
+        <p>Explore and let us know your <a href="https://encludeproject.eu/form/enclude-platform-survey" class=" font-medium text-blue-600 dark:text-blue-700 hover:underline">feedback!</a></p>
       </div>
       
       <!-- <a href="#" class="mt-6 inline-block w-full rounded-md border border-transparent bg-gray-900 px-8 py-3 font-medium text-white hover:bg-cyan-800 sm:w-auto">Get access to our one-time sale</a> -->

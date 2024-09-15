@@ -1,7 +1,7 @@
 <script>
 
     export let data;
-    // export let text_dark;
+
 
 </script>
 
@@ -10,7 +10,7 @@
 
     <!-- <div class=" max-w-xl bg-img backdrop-blur-sm" style="background-image: url('{data.imageUrl}');"> -->
     <div class=" max-w-xl bg-img backdrop-blur-sm">
-        <div class="flex rounded-lg h-full shadow-xl p-8 flex-col bg-white/20 dark:bg-black/10 dark:text-black" >
+        <div class="flex rounded-lg h-full shadow-xl p-8 flex-col bg-white/20 dark:bg-black/10 dark:text-slate-400" >
             <div><span class="inline-block mb-4 text-xs font-bold capitalize border-b-2 border-primary ">{data.category}</span></div>
             <div class="flex items-center mb-4 ">
                 <a href="{data.href}" class="mt-3 hover:text-primary hover:rounded-md"><h2 class="text-xl lg:text-3xl font-medium font-mono"><strong>{data.title}</strong></h2></a>
@@ -30,8 +30,8 @@
             </div>
             <div class="mt-5 flex flex-row justify-between max-[370px]:hidden">
                 <div class="flex flex-col ">
-                    <span class="block text-[#8a8a93] dark:text-black tracking-tight text-xs uppercase">Authors</span>
-                    <div class="mt-2 max-w-xs dark:text-gray-600">
+                    <span class="block text-[#8a8a93] dark:text-slate-500 tracking-tight text-xs uppercase">Authors</span>
+                    <div class="mt-2 max-w-xs dark:text-gray-400">
                         {#each data.authors as author, i}
                             {#if i != data.authors.length - 1}
                                 <span class="text-xs">{author}, </span>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col">
-                    <span class="block text-[#8a8a93] dark:text-black tracking-tight text-xs uppercase">Audience</span>
+                    <span class="block text-[#8a8a93] dark:text-slate-500 tracking-tight text-xs uppercase">Audience</span>
                     <div class="flex gap-2 mt-2 max-w-xs">
                         {#each data.badges as badge }
                         <div style="color: {badge.color} " class="badge badge-sm badge-outline ">{badge.title}</div>

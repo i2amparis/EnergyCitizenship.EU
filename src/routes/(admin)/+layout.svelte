@@ -3,7 +3,7 @@
     import '../../app.postcss';
 </script>
 
-<div class="text-sm breadcrumbs absolute start-20 mt-20 text-zinc-200">
+<div class="text-sm breadcrumbs absolute start-20 mt-10 lg:mt-20 text-zinc-200">
     <ul>
       <li><a href="/">Home</a></li> 
       <li><a href="/admin">admin panel</a></li> 

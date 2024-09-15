@@ -36,8 +36,8 @@
 			<ul class="menu menu-horizontal px-1 font-sans font-semibold text-lg">
 				<li class="ml-5"><a href="/about">About</a></li>
 				<li class="ml-5"><a href="/interactive_map">Citizen initiatives</a></li>
-				<li class="ml-5"><a href="/impacts">Impacts</a></li>
-				<li class="ml-5"><a href="/resources">Resources</a></li>
+				<li class="ml-5"><a href="/modules">Modules</a></li>
+				<li class="ml-5"><a href="/results">Results</a></li>
 				<li class="ml-5"><a href="https://encludeproject.eu/form/enclude-platform-survey">Provide feedback</a></li>
 				<li class="ml-5"><DarkMode></DarkMode></li>
 			</ul>
@@ -55,8 +55,8 @@
 	  <ul class="menu gap-2 p-4 w-full sm:w-80 min-h-full bg-base-300 text-base-content">
 		<a on:click={() => {show_close = false}} class="btn mt-5" href="/about">About</a>
 		<a on:click={() => {show_close = false}} class="btn" href="/interactive_map">Citizen initiatives</a>
-		<a on:click={() => {show_close = false}} class="btn" href="/impacts">Impacts</a>
-		<a on:click={() => {show_close = false}} class="btn" href="/resources">Resources</a>
+		<a on:click={() => {show_close = false}} class="btn" href="/modules">Modules</a>
+		<a on:click={() => {show_close = false}} class="btn" href="/results">Results</a>
 		<a on:click={() => {show_close = false}} class="btn" href="https://encludeproject.eu/form/enclude-platform-survey">Provide feedback</a>
 	  </ul>
 	</div>
