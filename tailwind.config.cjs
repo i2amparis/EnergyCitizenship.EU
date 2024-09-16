@@ -2,7 +2,8 @@
 const config = {
 	content: [
 		'./src/**/*.{html,js,svelte,ts}',
-		'./node_modules/tw-elements/dist/js/**/*.js'
+		'./node_modules/tw-elements/dist/js/**/*.js',
+		'./node_modules/layerchart/**/*.{svelte,js}'
 	],
 
 	theme: {

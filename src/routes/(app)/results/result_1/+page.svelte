@@ -1,6 +1,43 @@
 <script>
     import Toc from 'svelte-toc'
+    // export let data;
+
+    import { PUBLIC_MAPBOX_TOKEN } from "$env/static/public";
+    import { Map, controls } from "$lib/components.js";
+    const { NavigationControl } = controls;
+
+    // import ENC_ENCLUDE from "$lib/components/_EnergyCommunitiesClusters.svelte";
+
+    let center = { lat: 47.90448841507046, lng: 14.619435626967515 };
+    let zoom = 3.8;
+    let mapComponent;
+
+    function recentre({ detail }) {
+        center = detail.center;
+    }
 </script>
+
+<div class="" id="map">
+    <div class="map-container">
+        <div class="map-wrap">
+            <Map
+                bind:this={mapComponent}
+                accessToken={PUBLIC_MAPBOX_TOKEN}
+                on:recentre={recentre}
+                {center}
+                bind:zoom
+            >
+                <!-- <ENC_ENCLUDE /> -->
+                <NavigationControl />
+            </Map>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
 <div class="flex m-auto place-content-center">
 <div class="max-w-md">
