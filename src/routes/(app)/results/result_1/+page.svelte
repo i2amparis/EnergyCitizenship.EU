@@ -1,17 +1,24 @@
 <script>
     import Toc from 'svelte-toc'
-    // export let data;
+    
+    import guardian_icon from "$lib/assets/Results/result1/guardian.png"
+    import sceptic_icon from "$lib/assets/Results/result1/sceptic.png"
+    import colab_icon from "$lib/assets/Results/result1/colab.png"
+    import trailblazer_icon from "$lib/assets/Results/result1/trailblazer.png"
+    import reliant_icon from "$lib/assets/Results/result1/reliant.png"
+    import consious_icon from "$lib/assets/Results/result1/consious.png"
 
     import { PUBLIC_MAPBOX_TOKEN } from "$env/static/public";
     import { Map, controls } from "$lib/components.js";
     const { NavigationControl } = controls;
 
-    import ENC_ENCLUDE from "$lib/components/_EnergyCommunitiesClusters.svelte";
+    import CeiResult1 from '$lib/components/_CEI_result1.svelte';
 
-    let center = { lat: 47.90448841507046, lng: 14.619435626967515 };
-    let zoom = 3.7;
+
+    let center = { lat: 47.90448841507046, lng: 9.619435626967515 };
+    let zoom = 3.2;
     let mapComponent;
-    let mapStyle = 'mapbox://styles/steftsotras/clhbb2mb2013n01p65kz10ffq'
+    let mapStyle = 'mapbox://styles/steftsotras/cln8vlqvp03ih01qxgs7583d7'
 
     function recentre({ detail }) {
         center = detail.center;
@@ -27,13 +34,6 @@
     --toc-desktop-width="2em"    
 />
 </div>
-
-<!-- <article class="prose lg:prose-xl max-w-4xl m-auto mt-6 p-6">
-    <h2 class="toc-exclude">
-        Driving factors and citizen personas towards the further growth and
-        diffusion of Collective Energy Initiatives in Europe by 2030
-    </h2>
-</article> -->
 
 <article class="prose lg:prose-xl max-w-5xl m-auto mb-6 p-6">
     
@@ -86,7 +86,7 @@
                     bind:zoom
                     style={mapStyle}
                 >
-                    <ENC_ENCLUDE />
+                    <CeiResult1 />
                     <NavigationControl />
                 </Map>
             </div>
@@ -398,206 +398,135 @@
         <strong>potential motivations </strong>driving their
         <strong>decision to join </strong>a <strong>CEI</strong>:
     </p>
+
     <table cellspacing="0">
         <tbody>
+            <!-- Character 1: The Green Guardian -->
             <tr>
-                <td>
-                    <p>The Green Guardian</p>
+                <td align="center">
+                    <h3>The Green Guardian</h3>
                 </td>
-                <td>&nbsp;</td>
+                <td align="center">&nbsp;</td>
             </tr>
             <tr>
-                <td>
-                    <table border="0" cellspacing="0" cellpadding="0">
-                        <tbody>
-                            <tr>
-                                <td
-                                    ><img
-                                        src="blob:https://html-cleaner.com/fc4450c3-6779-4013-88ff-dc7575161903"
-                                        alt=""
-                                        width="123"
-                                        height="178"
-                                    /></td
-                                >
-                            </tr>
-                        </tbody>
-                    </table>
+                <td align="center" valign="bottom">
+                    <img src="{guardian_icon}" alt="" width="123" height="178" />
                 </td>
-                <td>
+                <td align="center" valign="top">
                     <p>
                         Environmentalists prioritizing sustainability and energy
-                        independence. Concerned about traditional energy's
-                        impact, they seek to reduce their carbon footprint
-                        through on-site renewable energy and reduced grid
-                        reliance, aligning with their desire for energy
-                        autonomy.
+                        independence. Concerned about traditional energy's impact,
+                        they seek to reduce their carbon footprint through on-site
+                        renewable energy and reduced grid reliance, aligning with
+                        their desire for energy autonomy.
                     </p>
                 </td>
             </tr>
+    
+            <!-- Character 2: The Security-Minded Sceptic -->
             <tr>
-                <td>
-                    <p>The Security-Minded Sceptic</p>
+                <td align="center">
+                    <h3>The Security-Minded Sceptic</h3>
                 </td>
-                <td>&nbsp;</td>
+                <td align="center">&nbsp;</td>
             </tr>
             <tr>
-                <td>
-                    <table border="0" cellspacing="0" cellpadding="0">
-                        <tbody>
-                            <tr>
-                                <td
-                                    ><img
-                                        src="blob:https://html-cleaner.com/a5a2f613-efc8-45be-844c-953602db2f45"
-                                        alt=""
-                                        width="122"
-                                        height="164"
-                                    /></td
-                                >
-                            </tr>
-                        </tbody>
-                    </table>
+                <td align="center" valign="bottom">
+                    <img src="{sceptic_icon}" alt="" width="122" height="164" />
                 </td>
-                <td>
+                <td align="center" valign="top">
                     <p>
                         These individuals are mainly attracted to the financial
-                        benefits of an energy community. They value a strong
-                        sense of community and trust their neighbors' positive
-                        experiences, which can convince them of the financial
-                        advantages and encourage adoption.
+                        benefits of an energy community. They value a strong sense
+                        of community and trust their neighbors' positive experiences,
+                        which can convince them of the financial advantages and
+                        encourage adoption.
                     </p>
                 </td>
             </tr>
+    
+            <!-- Character 3: The Eco-Collaborators -->
             <tr>
-                <td>
-                    <p>The Eco-Collaborators</p>
+                <td align="center">
+                    <h3>The Eco-Collaborators</h3>
                 </td>
-                <td>&nbsp;</td>
+                <td align="center">&nbsp;</td>
             </tr>
-        </tbody>
-    </table>
-    <table cellspacing="0">
-        <tbody>
             <tr>
-                <td>
-                    <table border="0" cellspacing="0" cellpadding="0">
-                        <tbody>
-                            <tr>
-                                <td
-                                    ><img
-                                        src="blob:https://html-cleaner.com/a5ccc357-d27d-4478-9768-b93eef884f77"
-                                        alt=""
-                                        width="126"
-                                        height="167"
-                                    /></td
-                                >
-                            </tr>
-                        </tbody>
-                    </table>
+                <td align="center" valign="bottom">
+                    <img src="{colab_icon}" alt="" width="126" height="167" />
                 </td>
-                <td>
+                <td align="center" valign="top">
                     <p>
-                        Community-oriented people that value collective action
-                        to address climate change. They are motivated by
-                        contributing to a larger environmental movement with
-                        like-minded neighbors and appreciate the focus on
-                        renewable energy to reduce their environmental impact.
+                        Community-oriented people that value collective action to
+                        address climate change. They are motivated by contributing
+                        to a larger environmental movement with like-minded neighbors
+                        and appreciate the focus on renewable energy to reduce their
+                        environmental impact.
                     </p>
                 </td>
             </tr>
+    
+            <!-- Character 4: The Tech Trailblazer -->
             <tr>
-                <td>
-                    <p>The Tech Trailblazer</p>
+                <td align="center">
+                    <h3>The Tech Trailblazer</h3>
                 </td>
-                <td>&nbsp;</td>
+                <td align="center">&nbsp;</td>
             </tr>
             <tr>
-                <td>
-                    <table border="0" cellspacing="0" cellpadding="0">
-                        <tbody>
-                            <tr>
-                                <td
-                                    ><img
-                                        src="blob:https://html-cleaner.com/e2a698c6-8a5f-4b88-8435-673d4afaae98"
-                                        alt=""
-                                        width="123"
-                                        height="187"
-                                    /></td
-                                >
-                            </tr>
-                        </tbody>
-                    </table>
+                <td align="center" valign="bottom">
+                    <img src="{trailblazer_icon}" alt="" width="123" height="187" />
                 </td>
-                <td>
+                <td align="center" valign="top">
                     <p>
-                        Excited about technologically innovative aspects of
-                        energy communities, they value smart home integration
-                        &amp; increased energy independence. The environmental
-                        benefits are a bonus, but their primary interest is in
-                        experimenting with and adopting the latest tech.
+                        Excited about technologically innovative aspects of energy
+                        communities, they value smart home integration &amp; increased
+                        energy independence. The environmental benefits are a bonus,
+                        but their primary interest is in experimenting with and
+                        adopting the latest tech.
                     </p>
                 </td>
             </tr>
+    
+            <!-- Character 5: The Self-Reliant Saver -->
             <tr>
-                <td>
-                    <p>The Self-Reliant Saver</p>
+                <td align="center">
+                    <h3>The Self-Reliant Saver</h3>
                 </td>
-                <td>&nbsp;</td>
+                <td align="center">&nbsp;</td>
             </tr>
             <tr>
-                <td>
-                    <table border="0" cellspacing="0" cellpadding="0">
-                        <tbody>
-                            <tr>
-                                <td
-                                    ><img
-                                        src="blob:https://html-cleaner.com/a6d18c7e-a375-4632-96b2-5ac12cf5322b"
-                                        alt=""
-                                        width="135"
-                                        height="167"
-                                    /></td
-                                >
-                            </tr>
-                        </tbody>
-                    </table>
+                <td align="center" valign="bottom">
+                    <img src="{reliant_icon}" alt="" width="135" height="167" />
                 </td>
-                <td>
+                <td align="center" valign="top">
                     <p>
                         These individuals seek self-sufficiency, valuing energy
                         independence and financial savings. They aim to reduce
-                        reliance on the traditional grid, generate their own
-                        energy, and are motivated by lower energy bills and
-                        shared investment opportunities.
+                        reliance on the traditional grid, generate their own energy,
+                        and are motivated by lower energy bills and shared investment
+                        opportunities.
                     </p>
                 </td>
             </tr>
+    
+            <!-- Character 6: The Eco-Conscious Saver -->
             <tr>
-                <td>
-                    <p>The Eco-Conscious Saver</p>
+                <td align="center">
+                    <h3>The Eco-Conscious Saver</h3>
                 </td>
-                <td>&nbsp;</td>
+                <td align="center">&nbsp;</td>
             </tr>
             <tr>
-                <td>
-                    <table border="0" cellspacing="0" cellpadding="0">
-                        <tbody>
-                            <tr>
-                                <td
-                                    ><img
-                                        src="blob:https://html-cleaner.com/e2baec22-abe6-453b-a85c-d6687b70e0ed"
-                                        alt=""
-                                        width="131"
-                                        height="178"
-                                    /></td
-                                >
-                            </tr>
-                        </tbody>
-                    </table>
+                <td align="center" valign="bottom">
+                    <img src="{consious_icon}" alt="" width="131" height="178" />
                 </td>
-                <td>
+                <td align="center" valign="top">
                     <p>
                         Environmentally conscious and financially savvy, these
-                        individuals want to reduce their carbon footprint and
-                        save money or earn income by joining energy communities.
+                        individuals want to reduce their carbon footprint and save
+                        money or earn income by joining energy communities.
                         Demonstrating cost savings and other financial benefits
                         related to CEIs can influence their decision.
                     </p>
@@ -605,6 +534,8 @@
             </tr>
         </tbody>
     </table>
+    
+    
 
     </section>
 
@@ -626,5 +557,9 @@
       border-left: 1px solid #dedede;
       display: flex;
       flex-direction: column;
+    }
+
+    table td{
+        vertical-align:  bottom!important;;
     }
   </style>
