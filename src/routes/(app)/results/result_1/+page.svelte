@@ -6,37 +6,17 @@
     import { Map, controls } from "$lib/components.js";
     const { NavigationControl } = controls;
 
-    // import ENC_ENCLUDE from "$lib/components/_EnergyCommunitiesClusters.svelte";
+    import ENC_ENCLUDE from "$lib/components/_EnergyCommunitiesClusters.svelte";
 
     let center = { lat: 47.90448841507046, lng: 14.619435626967515 };
-    let zoom = 3.8;
+    let zoom = 3.7;
     let mapComponent;
+    let mapStyle = 'mapbox://styles/steftsotras/clhbb2mb2013n01p65kz10ffq'
 
     function recentre({ detail }) {
         center = detail.center;
     }
 </script>
-
-<div class="" id="map">
-    <div class="map-container">
-        <div class="map-wrap">
-            <Map
-                bind:this={mapComponent}
-                accessToken={PUBLIC_MAPBOX_TOKEN}
-                on:recentre={recentre}
-                {center}
-                bind:zoom
-            >
-                <!-- <ENC_ENCLUDE /> -->
-                <NavigationControl />
-            </Map>
-        </div>
-    </div>
-</div>
-
-
-
-
 
 
 <div class="flex m-auto place-content-center">
@@ -93,7 +73,26 @@
         &ldquo;<strong>Belica Energy Community</strong>&rdquo; in North
         Macedonia.
     </p>
-    <p>&nbsp;</p>
+    <!-- <p>&nbsp;</p> -->
+
+    <div class="mt-4 mb-4" id="map">
+        <div class="map-container">
+            <div class="map-wrap">
+                <Map
+                    bind:this={mapComponent}
+                    accessToken={PUBLIC_MAPBOX_TOKEN}
+                    on:recentre={recentre}
+                    {center}
+                    bind:zoom
+                    style={mapStyle}
+                >
+                    <ENC_ENCLUDE />
+                    <NavigationControl />
+                </Map>
+            </div>
+        </div>
+    </div>
+
     <p>
         To model diffusion processes, the gr<strong>A</strong>ssroot i<strong
             >N</strong
@@ -612,3 +611,20 @@
 </article>
 
 </div>
+
+<style>
+    .map-container {
+      width: 100%;
+      height: 400px;
+  
+      display: flex;
+      align-items: stretch;
+      position: relative;
+    }
+    .map-wrap {
+      flex: 1;
+      border-left: 1px solid #dedede;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
