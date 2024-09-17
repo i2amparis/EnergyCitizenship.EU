@@ -144,7 +144,7 @@ export function flattenResultData(data) {
         scenario: d.Scenario,
         region: d.Region,
         unit: d.Unit,
-        value: parseFloat(d.years[year]),
+        value: parseFloat(d.years[year].replace('%', '').replace(',', '.')),
       }))
     );
   }

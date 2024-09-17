@@ -29,12 +29,16 @@
     // export let data;
     // export let groupBy;
 
+    export let groupKeys;
+
+    var unitName = groupKeys[2] == 'Percentage growth from initial population' 
+    ? 'Percentage growth (%)'
+    : 'CO2 emmisions (tons)'
+
     var groupedYears = groupYearsInResultData(ENC_results);
 
     let result = getFilteredData(groupedYears, 
-        "Cloughjordan Ecovillage - Ireland", 
-        "Emissions avoided|CO2|Residential and Commercial|Residential",  
-        "t CO2/yr"
+        ...groupKeys
     );
 
     console.log(result)
@@ -51,6 +55,7 @@
     console.log(multiSeriesFlatData)
   </script>
   
+  <div class=" font-bold mt-6">{groupKeys[0]}</div>
   <div class="h-[300px] xl:h-[500px] p-4 border rounded">
     <Chart
         bind:data={multiSeriesFlatData}
@@ -70,13 +75,14 @@
     >
         <Svg>
             <Axis placement="left" grid rule />
+            
             <Axis
                 placement="bottom"
                 format={(d) => d}
                 rule
             />
             <Axis
-                label="unit"
+                label={unitName}
                 placement="left"
                 labelPlacement="middle"
                 rule
@@ -111,7 +117,7 @@
           x="data"
           header={(data) => data.year} 
           let:data>
-            <TooltipItem label={data[groupBy]} value={data.value.toFixed(2)} />
+            <TooltipItem label={data[groupBy]} value={ groupKeys[2] == 'Percentage growth from initial population' ? data.value+'%' : data.value.toFixed(2)} />
         </Tooltip>
     </Chart>
   </div>

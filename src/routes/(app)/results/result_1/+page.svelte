@@ -303,7 +303,16 @@
         sustainable development plans.
     </p>
 
-    <MultiLineChart></MultiLineChart>
+    <MultiLineChart
+        groupKeys={["Cloughjordan Ecovillage - Ireland", 
+        "Emissions avoided|CO2|Residential and Commercial|Residential",  
+        "t CO2/yr"]}
+    ></MultiLineChart>
+    <MultiLineChart
+        groupKeys={["Energie C Midden Delfland - The Netherlands", 
+        "Collective Energy Initiative (CEI) Percentage growth | Min",  
+        "Percentage growth from initial population"]}
+    ></MultiLineChart>
     </section>
 
     <section class="mt-12">
