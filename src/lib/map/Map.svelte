@@ -39,9 +39,7 @@
   export let customStylesheetUrl = false
   export let style = 'mapbox://styles/steftsotras/cln8vlqvp03ih01qxgs7583d7'
 
-  //mapbox://styles/steftsotras/clhb6jeev012l01qyfg5rhpwz
   //'mapbox://styles/steftsotras/clhbb2mb2013n01p65kz10ffq'
-  //mapbox://styles/steftsotras/clmum5t4102kv01pf1xtn95i4
  //mapbox://styles/steftsotras/clndihp2x03pu01qu4t15ersq
 
   //Dark

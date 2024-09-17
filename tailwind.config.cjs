@@ -12,6 +12,12 @@ const config = {
 				sans: ['Poppins'],
 				mono: ['Consolas']
 			  },
+			  colors: {
+				'surface-100': 'oklch(var(--b1) / <alpha-value>)',
+				'surface-200': 'oklch(var(--b2) / <alpha-value>)',
+				'surface-300': 'oklch(var(--b3) / <alpha-value>)',
+				'surface-content': 'oklch(var(--bc) / <alpha-value>)',
+			  }
 		}
 	},
 	daisyui: {

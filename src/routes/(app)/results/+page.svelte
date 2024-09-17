@@ -1,10 +1,7 @@
 <script>
     import BoilerplateCards from "$lib/components/BoilerplateCards.svelte";
-
     import { results_cards } from "$lib/results-data";
-    
 </script>
-
 
 <section class="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 ">
     <div class="mx-auto max-w-2xl lg:max-w-none">

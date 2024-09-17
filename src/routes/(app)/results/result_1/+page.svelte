@@ -13,17 +13,21 @@
     const { NavigationControl } = controls;
 
     import CeiResult1 from '$lib/components/_CEI_result1.svelte';
+    import MultiLineChart from '$lib/components/_MultiLineChart.svelte'
 
 
     let center = { lat: 47.90448841507046, lng: 9.619435626967515 };
     let zoom = 3.2;
     let mapComponent;
     let mapStyle = 'mapbox://styles/steftsotras/cln8vlqvp03ih01qxgs7583d7'
-
+// 'mapbox://styles/steftsotras/cln8vlqvp03ih01qxgs7583d7'
     function recentre({ detail }) {
         center = detail.center;
     }
 </script>
+
+
+<!-- <LineChart></LineChart> -->
 
 
 <div class="flex m-auto place-content-center">
@@ -31,10 +35,14 @@
 <Toc 
     --toc-desktop-aside-margin="10em 0 0 0"
     --toc-desktop-sticky-top="3em"
-    --toc-desktop-width="2em"    
-/>
-</div>
+    --toc-desktop-width="2em"
+>
+    <span class=" line-clamp-3 p-1" let:idx let:heading slot="toc-item">
+        {idx + 1}. {heading.innerText}
+    </span>
+</Toc>
 
+</div>
 <article class="prose lg:prose-xl max-w-5xl m-auto mb-6 p-6">
     
     <h2 class="toc-exclude">
@@ -294,6 +302,8 @@
         a strategic approach to ensure that infrastructure keeps pace with
         sustainable development plans.
     </p>
+
+    <MultiLineChart></MultiLineChart>
     </section>
 
     <section class="mt-12">
