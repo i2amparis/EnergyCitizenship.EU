@@ -40,12 +40,12 @@
     --toc-desktop-width="2em"
 >
     <span class=" line-clamp-3 p-1" let:idx let:heading slot="toc-item">
-        {idx + 1}. {heading.innerText}
+        {heading.innerText}
     </span>
 </Toc>
 
 </div>
-<article class="prose lg:prose-xl max-w-5xl m-auto mb-6 p-6">
+<article class="prose lg:prose-xl prose-p:mb-2 prose-p:mt-4 max-w-5xl m-auto mb-6 p-6">
     
     <h2 class="toc-exclude">
         Driving factors and citizen personas towards the further growth and
@@ -308,7 +308,7 @@
     {#each regions as region}
     <MultiLineChart
         groupKeys={[region, 
-        "Collective Energy Initiative (CEI) Percentage growth | Min",  
+        "Collective Energy Initiative (CEI) Percentage growth | Average",  
         "Percentage growth from initial population"]}
     ></MultiLineChart>
     {/each}
@@ -316,10 +316,10 @@
     </section>
 
     <section class="mt-12">
-    <h2>
+    <h3>
         What is the emission reduction (decarbonization) potential related to
         the further growth of CEIs around Europe?
-    </h2>
+    </h3>
     <p>
         As expected, the most significant emission reduction (decarbonization)
         potential is correlated with increased participation in energy
@@ -428,18 +428,26 @@
 
     <table cellspacing="0">
         <tbody>
-            <!-- Character 1: The Green Guardian -->
             <tr>
+                <td>
+                    <!-- <h2 class="toc-exclude">Citizen Personas</h2> -->
+                    <div class=" w-24 sm:w-32 lg:w-44"></div>
+                </td>
+                <!-- <td align="center">&nbsp;</td> -->
+            </tr>
+            <!-- Character 1: The Green Guardian -->
+            <!-- <tr>
                 <td align="center">
                     <h3>The Green Guardian</h3>
                 </td>
                 <td align="center">&nbsp;</td>
-            </tr>
+            </tr> -->
             <tr>
                 <td align="center" valign="bottom">
                     <img src="{guardian_icon}" alt="" width="123" height="178" />
                 </td>
                 <td align="center" valign="top">
+                    <h3>The Green Guardian</h3>
                     <p>
                         Environmentalists prioritizing sustainability and energy
                         independence. Concerned about traditional energy's impact,
@@ -452,16 +460,17 @@
     
             <!-- Character 2: The Security-Minded Sceptic -->
             <tr>
-                <td align="center">
+                <!-- <td align="center">
                     <h3>The Security-Minded Sceptic</h3>
                 </td>
-                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td> -->
             </tr>
             <tr>
                 <td align="center" valign="bottom">
                     <img src="{sceptic_icon}" alt="" width="122" height="164" />
                 </td>
                 <td align="center" valign="top">
+                    <h3>The Security-Minded Sceptic</h3>
                     <p>
                         These individuals are mainly attracted to the financial
                         benefits of an energy community. They value a strong sense
@@ -474,16 +483,17 @@
     
             <!-- Character 3: The Eco-Collaborators -->
             <tr>
-                <td align="center">
+                <!-- <td align="center">
                     <h3>The Eco-Collaborators</h3>
                 </td>
-                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td> -->
             </tr>
             <tr>
                 <td align="center" valign="bottom">
                     <img src="{colab_icon}" alt="" width="126" height="167" />
                 </td>
                 <td align="center" valign="top">
+                    <h3>The Eco-Collaborators</h3>
                     <p>
                         Community-oriented people that value collective action to
                         address climate change. They are motivated by contributing
@@ -496,16 +506,17 @@
     
             <!-- Character 4: The Tech Trailblazer -->
             <tr>
-                <td align="center">
+                <!-- <td align="center">
                     <h3>The Tech Trailblazer</h3>
                 </td>
-                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td> -->
             </tr>
             <tr>
                 <td align="center" valign="bottom">
                     <img src="{trailblazer_icon}" alt="" width="123" height="187" />
                 </td>
                 <td align="center" valign="top">
+                    <h3>The Tech Trailblazer</h3>
                     <p>
                         Excited about technologically innovative aspects of energy
                         communities, they value smart home integration &amp; increased
@@ -518,16 +529,17 @@
     
             <!-- Character 5: The Self-Reliant Saver -->
             <tr>
-                <td align="center">
+                <!-- <td align="center">
                     <h3>The Self-Reliant Saver</h3>
                 </td>
-                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td> -->
             </tr>
             <tr>
                 <td align="center" valign="bottom">
                     <img src="{reliant_icon}" alt="" width="135" height="167" />
                 </td>
                 <td align="center" valign="top">
+                    <h3>The Self-Reliant Saver</h3>
                     <p>
                         These individuals seek self-sufficiency, valuing energy
                         independence and financial savings. They aim to reduce
@@ -540,16 +552,17 @@
     
             <!-- Character 6: The Eco-Conscious Saver -->
             <tr>
-                <td align="center">
+                <!-- <td align="center">
                     <h3>The Eco-Conscious Saver</h3>
                 </td>
-                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td> -->
             </tr>
             <tr>
                 <td align="center" valign="bottom">
                     <img src="{consious_icon}" alt="" width="131" height="178" />
                 </td>
                 <td align="center" valign="top">
+                    <h3>The Eco-Conscious Saver</h3>
                     <p>
                         Environmentally conscious and financially savvy, these
                         individuals want to reduce their carbon footprint and save

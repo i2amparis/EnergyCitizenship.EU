@@ -59,17 +59,22 @@ export function flattenResultData(data) {
   }
 
   export let colorPallete = [
-    '#1f78b4',
-    '#a6cee3',
-    '#b2df8a',
-    '#33a02c',
-    '#fb9a99',
-    '#e31a1c',
-    '#fdbf6f',
-    '#ff7f00',
-    '#cab2d6',
-    '#6a3d9a'
-   ]
+    
+    '#a6cee3', //light green
+    '#b2df8a', //light blue
+    '#fb9a99', //light red
+    
+    
+    '#cab2d6', //light purp 
+    '#fdbf6f', //yellow
+    '#e31a1c', //red
+    '#ff7f00', //orange
+    '#6a3d9a', //purp
+
+    '#e31a1c', //red
+    '#1f78b4', //blue
+    '#33a02c', //green
+    ]
   
   
 export function colorGroups(data){

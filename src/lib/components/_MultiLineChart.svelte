@@ -25,18 +25,17 @@
     // export let groupBy;
 
     export let groupKeys;
-    export let highlight = false;
+    export let highlight = true;
     export let groupBy = 'scenario';
 
     var unitName = groupKeys[2] == 'Percentage growth from initial population' 
     ? 'Percentage growth (%)'
-    : 'CO2 emmisions (tons)'
+    : 'CO2 emissions (tons)'
 
     var groupedYears = groupYearsInResultData(ENC_results);
     let result = getFilteredData(groupedYears, 
         ...groupKeys
     );
-
 
     let multiSeriesFlatData = flattenResultData(result);
     let dataByGroup = groupsResultDataBy(multiSeriesFlatData, groupBy);
