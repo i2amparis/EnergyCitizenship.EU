@@ -15,19 +15,21 @@
     import CeiResult1 from '$lib/components/_CEI_result1.svelte';
     import MultiLineChart from '$lib/components/_MultiLineChart.svelte'
 
-
     let center = { lat: 47.90448841507046, lng: 9.619435626967515 };
     let zoom = 3.2;
     let mapComponent;
     let mapStyle = 'mapbox://styles/steftsotras/cln8vlqvp03ih01qxgs7583d7'
-// 'mapbox://styles/steftsotras/cln8vlqvp03ih01qxgs7583d7'
+                // 'mapbox://styles/steftsotras/clhbb2mb2013n01p65kz10ffq'
+
     function recentre({ detail }) {
         center = detail.center;
     }
+
+    const regions = ['Cloughjordan Ecovillage - Ireland','Energie C Midden Delfland - The Netherlands','Belica Energy Community - North Macedonia'];
+
+
 </script>
 
-
-<!-- <LineChart></LineChart> -->
 
 
 <div class="flex m-auto place-content-center">
@@ -303,16 +305,14 @@
         sustainable development plans.
     </p>
 
+    {#each regions as region}
     <MultiLineChart
-        groupKeys={["Cloughjordan Ecovillage - Ireland", 
-        "Emissions avoided|CO2|Residential and Commercial|Residential",  
-        "t CO2/yr"]}
-    ></MultiLineChart>
-    <MultiLineChart
-        groupKeys={["Energie C Midden Delfland - The Netherlands", 
+        groupKeys={[region, 
         "Collective Energy Initiative (CEI) Percentage growth | Min",  
         "Percentage growth from initial population"]}
     ></MultiLineChart>
+    {/each}
+
     </section>
 
     <section class="mt-12">
@@ -357,6 +357,14 @@
         transitions and fostering collective energy citizenship practices at the
         local level.
     </p>
+
+    {#each regions as region}
+    <MultiLineChart
+        groupKeys={[region, 
+        "Emissions avoided|CO2|Residential and Commercial|Residential",  
+        "t CO2/yr"]}
+    ></MultiLineChart>
+    {/each}
 
     </section>
     

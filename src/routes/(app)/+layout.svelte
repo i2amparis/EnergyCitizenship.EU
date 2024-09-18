@@ -25,7 +25,7 @@
 		</div> 
 		<div class="flex-1 px-2 mx-5">
 
-			<a class="btn btn-ghost normal-case lg:text-xl text-lg" href="/">
+			<a data-sveltekit-reload class="btn btn-ghost normal-case lg:text-xl text-lg" href="/">
 				<div class="w-12">
 					<img src={Logo} alt="download icon"/>
 				</div>
@@ -34,10 +34,10 @@
 		</div>
 		<div class="flex-none hidden xl:block mr-3">
 			<ul class="menu menu-horizontal px-1 font-sans font-semibold text-lg">
-				<li class="ml-5"><a href="/about">About</a></li>
-				<li class="ml-5"><a href="/interactive_map">Citizen initiatives</a></li>
-				<li class="ml-5"><a href="/modules">Modules</a></li>
-				<li class="ml-5"><a href="/results">Results</a></li>
+				<li class="ml-5"><a data-sveltekit-reload href="/about">About</a></li>
+				<li class="ml-5"><a data-sveltekit-reload href="/interactive_map">Citizen initiatives</a></li>
+				<li class="ml-5"><a data-sveltekit-reload href="/modules">Modules</a></li>
+				<li class="ml-5"><a data-sveltekit-reload href="/results">Results</a></li>
 				<li class="ml-5"><a href="https://encludeproject.eu/form/enclude-platform-survey">Provide feedback</a></li>
 				<li class="ml-5"><DarkMode></DarkMode></li>
 			</ul>
@@ -53,10 +53,10 @@
 	<div class="drawer-side top-16 sm:top-0 overflow-hidden">
 	  <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label> 
 	  <ul class="menu gap-2 p-4 w-full sm:w-80 min-h-full bg-base-300 text-base-content">
-		<a on:click={() => {show_close = false}} class="btn mt-5" href="/about">About</a>
-		<a on:click={() => {show_close = false}} class="btn" href="/interactive_map">Citizen initiatives</a>
-		<a on:click={() => {show_close = false}} class="btn" href="/modules">Modules</a>
-		<a on:click={() => {show_close = false}} class="btn" href="/results">Results</a>
+		<a data-sveltekit-reload on:click={() => {show_close = false}} class="btn mt-5" href="/about">About</a>
+		<a data-sveltekit-reload on:click={() => {show_close = false}} class="btn" href="/interactive_map">Citizen initiatives</a>
+		<a data-sveltekit-reload on:click={() => {show_close = false}} class="btn" href="/modules">Modules</a>
+		<a data-sveltekit-reload on:click={() => {show_close = false}} class="btn" href="/results">Results</a>
 		<a on:click={() => {show_close = false}} class="btn" href="https://encludeproject.eu/form/enclude-platform-survey">Provide feedback</a>
 	  </ul>
 	</div>

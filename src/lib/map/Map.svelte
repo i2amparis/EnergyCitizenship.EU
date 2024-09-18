@@ -45,9 +45,6 @@
   //Dark
   //mapbox://styles/steftsotras/clnqswk7f00eu01pg7joxf2xq
  
-  //White
-  // 'mapbox://styles/steftsotras/clhgc3yfb01cn01pg40woeo4t'
-
   //Streets
   //  mapbox://styles/steftsotras/cln8vlqvp03ih01qxgs7583d7
 

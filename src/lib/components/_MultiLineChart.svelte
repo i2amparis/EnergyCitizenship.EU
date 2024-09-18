@@ -1,12 +1,7 @@
 <script>
     
-    // import { extent, flatGroup, ticks } from 'd3-array';
-    // import { interpolateTurbo } from 'd3-scale-chromatic';
-    // import { format } from 'date-fns';
-    // import { formatDate, PeriodType } from 'svelte-ux/utils/date';
-    
     import { scaleBand, scaleOrdinal, scalePoint, scaleSequential, scaleTime } from 'd3-scale';
-    import {flattenResultData,getFilteredData, groupResultDataBy, groupsResultDataBy, colorGroups, dummy, groupYearsInResultData} from '$lib/chart-data'
+    import {flattenResultData, getFilteredData, groupResultDataBy, groupsResultDataBy, colorGroups, groupYearsInResultData} from '$lib/chart-data'
     import ENC_results from '$lib/assets/ENCLUDE_Models_Results.json'
   
   
@@ -30,29 +25,23 @@
     // export let groupBy;
 
     export let groupKeys;
+    export let highlight = false;
+    export let groupBy = 'scenario';
 
     var unitName = groupKeys[2] == 'Percentage growth from initial population' 
     ? 'Percentage growth (%)'
     : 'CO2 emmisions (tons)'
 
     var groupedYears = groupYearsInResultData(ENC_results);
-
     let result = getFilteredData(groupedYears, 
         ...groupKeys
     );
 
-    console.log(result)
-
-
-    let groupBy = 'scenario'
-    let highlight = false;
 
     let multiSeriesFlatData = flattenResultData(result);
     let dataByGroup = groupsResultDataBy(multiSeriesFlatData, groupBy);
     const groupColors = colorGroups(dataByGroup);
 
-
-    console.log(multiSeriesFlatData)
   </script>
   
   <div class=" font-bold mt-6">{groupKeys[0]}</div>
@@ -68,7 +57,7 @@
         rScale={scaleOrdinal()}
         rDomain={Object.keys(groupColors)}
         rRange={Object.values(groupColors)}
-        padding={{  left: 35, bottom: 12, right: 60 }}
+        padding={{  left: 35, bottom: 12, right: 12 }}
         tooltip={{ mode: 'voronoi' }}
         let:rScale
         let:tooltip
@@ -99,14 +88,14 @@
                 <Spline {data} class="stroke-2" stroke={color}>
                     <svelte:fragment slot="end">
                         <circle r={4} fill={color} />
-                        <Text
+                        <!-- <Text
                             value={group}
                             verticalAnchor="middle"
                             dx={6}
                             dy={-2}
                             class="text-xs"
                             fill={color}
-                        />
+                        /> -->
                     </svelte:fragment>
                 </Spline>
             {/each}
