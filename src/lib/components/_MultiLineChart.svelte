@@ -2,7 +2,7 @@
     
     import { scaleBand, scaleOrdinal, scalePoint, scaleSequential, scaleTime } from 'd3-scale';
     import {flattenResultData, getFilteredData, groupResultDataBy, groupsResultDataBy, colorGroups, groupYearsInResultData} from '$lib/chart-data'
-    import ENC_results from '$lib/assets/ENCLUDE_Models_Results.json'
+    
   
   
   
@@ -21,29 +21,35 @@
       pivotLonger,
       } from 'layerchart';
   
-    // export let data;
-    // export let groupBy;
-
-    export let groupKeys;
+    export let data;
+    export let region;
+    export let variable;
+    export let unit;
+    
+    // export let groupKeys;
     export let highlight = true;
     export let groupBy = 'scenario';
 
-    var unitName = groupKeys[2] == 'Percentage growth from initial population' 
+    var unitName = unit == 'Percentage growth from initial population' 
     ? 'Percentage growth (%)'
+    : unit == 'euros/household/yr'
+    ? 'Total costs per household (€)'
+    : unit == 'euros/yr'
+    ? 'Total costs at the muncipality level (€)'
     : 'CO2 emissions (tons)'
 
-    var groupedYears = groupYearsInResultData(ENC_results);
-    let result = getFilteredData(groupedYears, 
-        ...groupKeys
-    );
+    var groupedYears = groupYearsInResultData(data);
+    let result = getFilteredData(groupedYears, region, variable, unit);
 
     let multiSeriesFlatData = flattenResultData(result);
     let dataByGroup = groupsResultDataBy(multiSeriesFlatData, groupBy);
     const groupColors = colorGroups(dataByGroup);
 
+    console.log(groupColors)
+    console.log(dataByGroup)
   </script>
   
-  <div class=" font-bold mt-6">{groupKeys[0]}</div>
+  <div class=" font-bold mt-6">{region}</div>
   <div class="h-[300px] xl:h-[500px] p-4 border rounded">
     <Chart
         bind:data={multiSeriesFlatData}
@@ -56,7 +62,7 @@
         rScale={scaleOrdinal()}
         rDomain={Object.keys(groupColors)}
         rRange={Object.values(groupColors)}
-        padding={{  left: 35, bottom: 12, right: 12 }}
+        padding={{  left: 55, bottom: 12, right: 12 }}
         tooltip={{ mode: 'voronoi' }}
         let:rScale
         let:tooltip
@@ -105,7 +111,7 @@
           x="data"
           header={(data) => data.year} 
           let:data>
-            <TooltipItem label={data[groupBy]} value={ groupKeys[2] == 'Percentage growth from initial population' ? data.value+'%' : data.value.toFixed(2)} />
+            <TooltipItem label={data[groupBy]} value={ unit == 'Percentage growth from initial population' ? data.value+'%' : data.value.toFixed(2)} />
         </Tooltip>
     </Chart>
   </div>

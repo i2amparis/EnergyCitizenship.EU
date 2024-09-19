@@ -1,22 +1,28 @@
 import { group, rollup, groups } from 'd3-array';
+// import ENC_results from '$lib/assets/ENCLUDE_Models_Results.json'
+
 
 
 export function groupYearsInResultData(data){
-    return data.map(entry => ({
-        Model: entry.Model,
-        Scenario: entry.Scenario,
-        Region: entry.Region,
-        Variable: entry.Variable,
-        Unit: entry.Unit,
-        years: {
-            "2025": entry["2025"],
-            "2026": entry["2026"],
-            "2027": entry["2027"],
-            "2028": entry["2028"],
-            "2029": entry["2029"],
-            "2030": entry["2030"]
-        }
-    }));
+    
+    return data.map(entry => {
+        
+        const years = Object.keys(entry).reduce((acc, key) => {
+            if (!isNaN(key) && Number(key) > 2000) {
+                acc[key] = entry[key];
+            }
+            return acc;
+        }, {});
+    
+        return {
+            Model: entry.Model,
+            Scenario: entry.Scenario,
+            Region: entry.Region,
+            Variable: entry.Variable,
+            Unit: entry.Unit,
+            years: years
+        };
+    });
 }
 
 

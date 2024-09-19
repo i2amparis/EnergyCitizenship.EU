@@ -15,6 +15,10 @@
     import CeiResult1 from '$lib/components/_CEI_result1.svelte';
     import MultiLineChart from '$lib/components/_MultiLineChart.svelte'
 
+    import RadioButton from '$lib/components/RadioButton.svelte'
+
+    import ENC_results from '$lib/assets/ENCLUDE_Models_Results.json'
+
     let center = { lat: 47.90448841507046, lng: 9.619435626967515 };
     let zoom = 3.2;
     let mapComponent;
@@ -26,8 +30,8 @@
     }
 
     const regions = ['Cloughjordan Ecovillage - Ireland','Energie C Midden Delfland - The Netherlands','Belica Energy Community - North Macedonia'];
-
-
+    const variables = ['Collective Energy Initiative (CEI) Percentage growth | Average', 'Collective Energy Initiative (CEI) Percentage growth | Min', 'Collective Energy Initiative (CEI) Percentage growth | Max']
+    let currVariable = variables[0];
 </script>
 
 
@@ -304,14 +308,21 @@
         a strategic approach to ensure that infrastructure keeps pace with
         sustainable development plans.
     </p>
-
-    {#each regions as region}
-    <MultiLineChart
-        groupKeys={[region, 
-        "Collective Energy Initiative (CEI) Percentage growth | Average",  
-        "Percentage growth from initial population"]}
-    ></MultiLineChart>
-    {/each}
+    <div class="mt-12">
+        <RadioButton
+            bind:selected={currVariable}
+        ></RadioButton>
+        {#key currVariable}
+            {#each regions as region}
+                <MultiLineChart
+                    data={ENC_results}
+                    region={region}
+                    bind:variable={currVariable} 
+                    unit='Percentage growth from initial population'
+                ></MultiLineChart>
+            {/each}
+        {/key}
+    </div>
 
     </section>
 
@@ -359,11 +370,12 @@
     </p>
 
     {#each regions as region}
-    <MultiLineChart
-        groupKeys={[region, 
-        "Emissions avoided|CO2|Residential and Commercial|Residential",  
-        "t CO2/yr"]}
-    ></MultiLineChart>
+        <MultiLineChart
+            data={ENC_results}
+            region={region}
+            variable={'Emissions avoided|CO2|Residential and Commercial|Residential'}
+            unit='t CO2/yr'
+        ></MultiLineChart>
     {/each}
 
     </section>
