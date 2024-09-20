@@ -1,7 +1,7 @@
 <script>
     
     import { scaleBand, scaleOrdinal, scalePoint, scaleSequential, scaleTime } from 'd3-scale';
-    import {flattenResultData, getFilteredData, groupResultDataBy, groupsResultDataBy, colorGroups, groupYearsInResultData} from '$lib/chart-data'
+    import {flattenResultData, getFilteredData, worldScenarioColors, groupsResultDataBy, colorGroups, groupYearsInResultData} from '$lib/chart-data'
     
   
   
@@ -43,10 +43,14 @@
 
     let multiSeriesFlatData = flattenResultData(result);
     let dataByGroup = groupsResultDataBy(multiSeriesFlatData, groupBy);
-    const groupColors = colorGroups(dataByGroup);
+    // const groupColors = colorGroups(dataByGroup);
+    const groupColors = worldScenarioColors();
 
+    const yearsLength = dataByGroup[0][1].length;
+    
+    // console.log(multiSeriesFlatData)
     console.log(groupColors)
-    console.log(dataByGroup)
+    // console.log()
   </script>
   
   <div class=" font-bold mt-6">{region}</div>
@@ -70,11 +74,20 @@
         <Svg>
             <Axis placement="left" grid rule />
             
-            <Axis
-                placement="bottom"
-                format={(d) => d}
-                rule
-            />
+            {#if yearsLength > 10}
+              <Axis
+                  placement="bottom"
+                  format={(d) => d.toString().slice(2) }
+                  rule
+              />
+            {:else}
+              <Axis
+                  placement="bottom"
+                  format={(d) => d}
+                  rule
+              />
+            {/if}
+            
             <Axis
                 label={unitName}
                 placement="left"

@@ -94,3 +94,11 @@ export function colorGroups(data){
     }, {});
 
 }
+
+export function worldScenarioColors(){
+    return {
+        "Familiar World": "#a6cee3",
+        "Unified World": "#b2df8a",
+        "Fragmented World": "#fb9a99"
+    }
+}

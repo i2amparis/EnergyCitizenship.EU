@@ -29,7 +29,7 @@
         "2049": "0",
         "2050": "0",
         "Model": "DREEM",
-        "Scenario": "familiar_world",
+        "Scenario": "Familiar World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Energy Mix|Residential and Commercial|Residential|Oil Products (Heating)",
         "Unit": "ktoe/yr"
@@ -64,7 +64,7 @@
         "2049": "1,619380626",
         "2050": "1,627564735",
         "Model": "DREEM",
-        "Scenario": "familiar_world",
+        "Scenario": "Familiar World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Energy Mix|Residential and Commercial|Residential|Electricity",
         "Unit": "ktoe/yr"
@@ -99,7 +99,7 @@
         "2049": "0,080112585",
         "2050": "0",
         "Model": "DREEM",
-        "Scenario": "familiar_world",
+        "Scenario": "Familiar World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Energy Mix|Residential and Commercial|Residential|Natural Gas",
         "Unit": "ktoe/yr"
@@ -134,7 +134,7 @@
         "2049": "0",
         "2050": "0",
         "Model": "DREEM",
-        "Scenario": "familiar_world",
+        "Scenario": "Familiar World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Energy Mix|Residential and Commercial|Residential|District Heating",
         "Unit": "ktoe/yr"
@@ -169,7 +169,7 @@
         "2049": "0",
         "2050": "0",
         "Model": "DREEM",
-        "Scenario": "familiar_world",
+        "Scenario": "Familiar World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Energy Mix|Residential and Commercial|Residential|Biomass",
         "Unit": "ktoe/yr"
@@ -204,7 +204,7 @@
         "2049": "3,024175442",
         "2050": "3,096103918",
         "Model": "DREEM",
-        "Scenario": "familiar_world",
+        "Scenario": "Familiar World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Final Energy|Residential and Commercial|Residential|Savings",
         "Unit": "ktoe/yr"
@@ -239,7 +239,7 @@
         "2049": "0",
         "2050": "0",
         "Model": "DREEM",
-        "Scenario": "fragmented_world",
+        "Scenario": "Fragmented World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Energy Mix|Residential and Commercial|Residential|Oil Products (Heating)",
         "Unit": "ktoe/yr"
@@ -274,7 +274,7 @@
         "2049": "1,349206062",
         "2050": "1,374909329",
         "Model": "DREEM",
-        "Scenario": "fragmented_world",
+        "Scenario": "Fragmented World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Energy Mix|Residential and Commercial|Residential|Electricity",
         "Unit": "ktoe/yr"
@@ -309,7 +309,7 @@
         "2049": "1,189556303",
         "2050": "1,057758559",
         "Model": "DREEM",
-        "Scenario": "fragmented_world",
+        "Scenario": "Fragmented World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Energy Mix|Residential and Commercial|Residential|Natural Gas",
         "Unit": "ktoe/yr"
@@ -344,7 +344,7 @@
         "2049": "0",
         "2050": "0",
         "Model": "DREEM",
-        "Scenario": "fragmented_world",
+        "Scenario": "Fragmented World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Energy Mix|Residential and Commercial|Residential|District Heating",
         "Unit": "ktoe/yr"
@@ -379,7 +379,7 @@
         "2049": "0",
         "2050": "0",
         "Model": "DREEM",
-        "Scenario": "fragmented_world",
+        "Scenario": "Fragmented World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Energy Mix|Residential and Commercial|Residential|Biomass",
         "Unit": "ktoe/yr"
@@ -414,7 +414,7 @@
         "2049": "2,184906288",
         "2050": "2,291000764",
         "Model": "DREEM",
-        "Scenario": "fragmented_world",
+        "Scenario": "Fragmented World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Final Energy|Residential and Commercial|Residential|Savings",
         "Unit": "ktoe/yr"
@@ -449,7 +449,7 @@
         "2049": "0",
         "2050": "0",
         "Model": "DREEM",
-        "Scenario": "unified_world",
+        "Scenario": "Unified World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Energy Mix|Residential and Commercial|Residential|Oil Products (Heating)",
         "Unit": "ktoe/yr"
@@ -484,7 +484,7 @@
         "2049": "1,637246584",
         "2050": "1,627564735",
         "Model": "DREEM",
-        "Scenario": "unified_world",
+        "Scenario": "Unified World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Energy Mix|Residential and Commercial|Residential|Electricity",
         "Unit": "ktoe/yr"
@@ -519,7 +519,7 @@
         "2049": "0",
         "2050": "0",
         "Model": "DREEM",
-        "Scenario": "unified_world",
+        "Scenario": "Unified World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Energy Mix|Residential and Commercial|Residential|Natural Gas",
         "Unit": "ktoe/yr"
@@ -554,7 +554,7 @@
         "2049": "0",
         "2050": "0",
         "Model": "DREEM",
-        "Scenario": "unified_world",
+        "Scenario": "Unified World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Energy Mix|Residential and Commercial|Residential|District Heating",
         "Unit": "ktoe/yr"
@@ -589,7 +589,7 @@
         "2049": "0",
         "2050": "0",
         "Model": "DREEM",
-        "Scenario": "unified_world",
+        "Scenario": "Unified World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Energy Mix|Residential and Commercial|Residential|Biomass",
         "Unit": "ktoe/yr"
@@ -624,7 +624,7 @@
         "2049": "3,086422068",
         "2050": "3,096103918",
         "Model": "DREEM",
-        "Scenario": "unified_world",
+        "Scenario": "Unified World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Final Energy|Residential and Commercial|Residential|Savings",
         "Unit": "ktoe/yr"
@@ -659,7 +659,7 @@
         "2049": "465,5941746",
         "2050": "177,9286319",
         "Model": "DREEM",
-        "Scenario": "familiar_world",
+        "Scenario": "Familiar World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Emissions|CO2|Residential and Commercial|Residential",
         "Unit": "t CO2/yr"
@@ -694,7 +694,7 @@
         "2049": "3006,830709",
         "2050": "2617,49401",
         "Model": "DREEM",
-        "Scenario": "fragmented_world",
+        "Scenario": "Fragmented World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Emissions|CO2|Residential and Commercial|Residential",
         "Unit": "t CO2/yr"
@@ -729,7 +729,7 @@
         "2049": "281,8094311",
         "2050": "177,9286319",
         "Model": "DREEM",
-        "Scenario": "unified_world",
+        "Scenario": "Unified World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Emissions|CO2|Residential and Commercial|Residential",
         "Unit": "t CO2/yr"
@@ -764,7 +764,7 @@
         "2049": "1455,983799",
         "2050": "1427,623644",
         "Model": "DREEM",
-        "Scenario": "familiar_world",
+        "Scenario": "Familiar World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Total Fuel Costs (Per Household)|Residential and Commercial|Residential",
         "Unit": "euros/household/yr"
@@ -799,7 +799,7 @@
         "2049": "2910,561838",
         "2050": "2761,019965",
         "Model": "DREEM",
-        "Scenario": "fragmented_world",
+        "Scenario": "Fragmented World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Total Fuel Costs (Per Household)|Residential and Commercial|Residential",
         "Unit": "euros/household/yr"
@@ -834,7 +834,7 @@
         "2049": "876,0864905",
         "2050": "866,044639",
         "Model": "DREEM",
-        "Scenario": "unified_world",
+        "Scenario": "Unified World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Total Fuel Costs (Per Household)|Residential and Commercial|Residential",
         "Unit": "euros/household/yr"
@@ -869,7 +869,7 @@
         "2049": "5161462,568",
         "2050": "5060925,819",
         "Model": "DREEM",
-        "Scenario": "familiar_world",
+        "Scenario": "Familiar World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Total Fuel Costs (All Households)|Residential and Commercial|Residential",
         "Unit": "euros/yr"
@@ -904,7 +904,7 @@
         "2049": "10317941,71",
         "2050": "9787815,774",
         "Model": "DREEM",
-        "Scenario": "fragmented_world",
+        "Scenario": "Fragmented World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Total Fuel Costs (All Households)|Residential and Commercial|Residential",
         "Unit": "euros/yr"
@@ -939,7 +939,7 @@
         "2049": "3105726,609",
         "2050": "3070128,245",
         "Model": "DREEM",
-        "Scenario": "unified_world",
+        "Scenario": "Unified World",
         "Region": "MEGALOPOLIS-GREECE",
         "Variable": "Total Fuel Costs (All Households)|Residential and Commercial|Residential",
         "Unit": "euros/yr"

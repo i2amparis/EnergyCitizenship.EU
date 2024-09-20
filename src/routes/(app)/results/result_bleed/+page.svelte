@@ -280,6 +280,12 @@
 
 
         <!-- total cost at the muncipla lvl -->
+        <MultiLineChart
+            data={ENC_DREEM}
+            region='MEGALOPOLIS-GREECE'
+            variable='Total Fuel Costs (All Households)|Residential and Commercial|Residential'
+            unit='euros/yr'
+        ></MultiLineChart>
 
         <p>
             The figure below presents the evolution of the charges to be borne
@@ -326,6 +332,12 @@
         </p>
 
         <!-- total cost per household -->
+        <MultiLineChart
+            data={ENC_DREEM}
+            region='MEGALOPOLIS-GREECE'
+            variable='Total Fuel Costs (Per Household)|Residential and Commercial|Residential'
+            unit='euros/household/yr'
+        ></MultiLineChart>
 
         <h3>
             <em
