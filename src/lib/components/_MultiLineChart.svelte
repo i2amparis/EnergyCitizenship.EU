@@ -136,7 +136,7 @@
     let:values
     let:scale
   >
-    <div class="flex gap-4 mt-2">
+    <div class=" max-[400px]:grid max-[400px]:grid-col-1 flex gap-4 mt-2">
       {#each values as value}
         <div class="flex gap-1">
           <div

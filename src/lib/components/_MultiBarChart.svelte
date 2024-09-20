@@ -75,7 +75,7 @@
     let:values
     let:scale
   >
-    <div class="flex gap-4 mt-2">
+    <div class="grid grid-cols-4 sm:flex gap-4 mt-2">
       {#each values as value}
         <div class="flex gap-1">
           <div
