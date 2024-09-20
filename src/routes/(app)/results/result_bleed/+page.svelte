@@ -3,6 +3,7 @@
 
     import ENC_DREEM from '$lib/assets/ENCLUDE_DREEM_Results.json'
     import MultiLineChart from "$lib/components/_MultiLineChart.svelte";
+    import MultiBarChart from "$lib/components/_MultiBarChart.svelte";
 </script>
 
 <div class="flex m-auto place-content-center">
@@ -233,6 +234,14 @@
         </p>
 
         <!-- Familiar World -->
+        <MultiBarChart
+            data={ENC_DREEM}
+            groupKeys={
+                [{'Scenario': 'Familiar World'},
+                {'Unit': 'ktoe/yr'}]}
+            groupBy='year'
+            xkey='variable'
+        ></MultiBarChart>
 
         <p>
             Similarly, under a transition pathway where citizens follow the
@@ -249,6 +258,14 @@
         </p>
 
         <!-- Unified World -->
+        <MultiBarChart
+            data={ENC_DREEM}
+            groupKeys={
+                [{'Scenario': 'Unified World'},
+                {'Unit': 'ktoe/yr'}]}
+            groupBy='year'
+            xkey='variable'
+        ></MultiBarChart>
 
         <p>
             Conversely, in a future characterized by <strong>distrust</strong>
@@ -265,6 +282,14 @@
         </p>
 
         <!-- Fragmented World -->
+        <MultiBarChart
+            data={ENC_DREEM}
+            groupKeys={
+                [{'Scenario': 'Fragmented World'},
+                {'Unit': 'ktoe/yr'}]}
+            groupBy='year'
+            xkey='variable'
+        ></MultiBarChart>
 
         <p>
             Furthermore, to extract a meaningful evaluation of the economic

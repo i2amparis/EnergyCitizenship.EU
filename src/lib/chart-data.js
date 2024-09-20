@@ -25,6 +25,26 @@ export function groupYearsInResultData(data){
     });
 }
 
+export function groupYearsInTrashResultData(data){
+    return data.map(entry => ({
+        Model: entry.Model,
+        Scenario: entry.Scenario,
+        Region: entry.Region,
+        Variable: entry.Variable,
+        Unit: entry.Unit,
+        years: {
+            "2023": entry["2023"],
+            "2024": entry["2024"],
+            "2025": entry["2025"],
+            "2030": entry["2030"],
+            "2035": entry["2035"],
+            "2040": entry["2040"],
+            "2045": entry["2045"],
+            "2050": entry["2050"]
+        }
+    }));
+}
+
 
 export function groupResultDataBy(data, groupName){
     return group(data, d => d[groupName]);
@@ -38,7 +58,7 @@ function groupsResultDataByMultiple(data, groupKeys) {
     return group(data, ...groupKeys.map(key => d => d[key]));
 }
 
-export function getFilteredData(data, region, variable, unit) {
+export function getFilteredLineData(data, region, variable, unit) {
     const groupedData = groupsResultDataByMultiple(data, ["Region", "Variable", "Unit"]);
 
     const regionGroup = groupedData.get(region);
@@ -52,6 +72,23 @@ export function getFilteredData(data, region, variable, unit) {
 
 }
 
+export function getFilteredData(data, groupKeys) {
+
+    const keys = groupKeys.map(obj => Object.keys(obj)[0]);
+    const values = groupKeys.map(obj => Object.values(obj)[0]);
+
+    const groupedData = groupsResultDataByMultiple(data, keys);
+    let currentGroup = groupedData;
+
+    for (let i = 0; i < values.length; i++) {
+        currentGroup = currentGroup.get(values[i]);
+        if (!currentGroup) return null;
+    }
+
+    return currentGroup || null;
+
+}
+
 export function flattenResultData(data) {
     return data.flatMap(d =>
       Object.keys(d.years).map(year => ({
@@ -59,6 +96,7 @@ export function flattenResultData(data) {
         scenario: d.Scenario,
         region: d.Region,
         unit: d.Unit,
+        variable: d.Variable,
         value: parseFloat(d.years[year].replace('%', '').replace(',', '.')),
       }))
     );

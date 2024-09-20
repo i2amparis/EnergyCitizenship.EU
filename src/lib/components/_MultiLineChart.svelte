@@ -1,7 +1,7 @@
 <script>
     
     import { scaleBand, scaleOrdinal, scalePoint, scaleSequential, scaleTime } from 'd3-scale';
-    import {flattenResultData, getFilteredData, worldScenarioColors, groupsResultDataBy, colorGroups, groupYearsInResultData} from '$lib/chart-data'
+    import {flattenResultData, getFilteredLineData, worldScenarioColors, groupsResultDataBy, colorGroups, groupYearsInResultData} from '$lib/chart-data'
     
   
   
@@ -39,18 +39,14 @@
     : 'CO2 emissions (tons)'
 
     var groupedYears = groupYearsInResultData(data);
-    let result = getFilteredData(groupedYears, region, variable, unit);
+    let result = getFilteredLineData(groupedYears, region, variable, unit);
 
     let multiSeriesFlatData = flattenResultData(result);
     let dataByGroup = groupsResultDataBy(multiSeriesFlatData, groupBy);
-    // const groupColors = colorGroups(dataByGroup);
     const groupColors = worldScenarioColors();
 
     const yearsLength = dataByGroup[0][1].length;
     
-    // console.log(multiSeriesFlatData)
-    console.log(groupColors)
-    // console.log()
   </script>
   
   <div class=" font-bold mt-6">{region}</div>
