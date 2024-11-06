@@ -5,7 +5,7 @@
 
 </script>
 
-<div class="group delay-150 ease-in-out hover:translate-y-1 focus:-translate-y-2 relative flex flex-col bg-clip-border rounded-xl bg-transparent text-slate-300 shadow-md min-h-[15rem] items-end overflow-hidden"><img src="{data.imageUrl}" alt="bg" class="absolute inset-0 h-full w-full object-cover object-center" />
+<div class="group delay-150 ease-in-out hover:translate-y-1 focus:-translate-y-2 relative flex flex-col bg-clip-border rounded-xl bg-transparent text-slate-300 shadow-md min-h-[17rem] items-end overflow-hidden"><img src="{data.imageUrl}" alt="bg" class="absolute inset-0 h-full w-full object-cover object-center" />
   <div class=" absolute inset-0 bg-black/20 transition-all backdrop-brightness-[.5] hover:bg-black/40 hover:backdrop-blur hover:cursor-pointer">
       <div class="p-6 relative flex flex-col justify-end text">
       <h4 class="block antialiased tracking-normal font-sans text-xl sm:text-2xl font-semibold leading-snug ">{data.title}</h4>

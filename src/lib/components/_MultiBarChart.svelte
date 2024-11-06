@@ -1,7 +1,7 @@
 <script>
     import { scaleBand, scaleOrdinal, scaleTime } from 'd3-scale';
     import { extent} from 'd3-array';
-    import { getFilteredData, groupsResultDataBy, colorGroups, flattenResultData, groupYearsInTrashResultData} from '$lib/chart-data'
+    import { getFilteredData, groupsResultDataBy, colorGroups, flattenResultData, groupYearsInSecondResultData} from '$lib/chart-data'
 
 
     import {

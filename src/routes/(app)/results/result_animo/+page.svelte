@@ -445,15 +445,8 @@
                     <!-- <h2 class="toc-exclude">Citizen Personas</h2> -->
                     <div class=" w-24 sm:w-32 lg:w-44"></div>
                 </td>
-                <!-- <td align="center">&nbsp;</td> -->
             </tr>
             <!-- Character 1: The Green Guardian -->
-            <!-- <tr>
-                <td align="center">
-                    <h3>The Green Guardian</h3>
-                </td>
-                <td align="center">&nbsp;</td>
-            </tr> -->
             <tr>
                 <td align="center" valign="bottom">
                     <img src="{guardian_icon}" alt="" width="123" height="178" />
@@ -472,10 +465,6 @@
     
             <!-- Character 2: The Security-Minded Sceptic -->
             <tr>
-                <!-- <td align="center">
-                    <h3>The Security-Minded Sceptic</h3>
-                </td>
-                <td align="center">&nbsp;</td> -->
             </tr>
             <tr>
                 <td align="center" valign="bottom">

@@ -25,7 +25,7 @@ export function groupYearsInResultData(data){
     });
 }
 
-export function groupYearsInTrashResultData(data){
+export function groupYearsInSecondResultData(data){
     return data.map(entry => ({
         Model: entry.Model,
         Scenario: entry.Scenario,
