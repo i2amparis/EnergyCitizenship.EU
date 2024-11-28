@@ -59,7 +59,127 @@ let impact_cards = [
         authors: [
             "ENERGY PROSPECTS"
         ]
-    }
+    },
+    {
+        category: "Modelling",
+        title: 'Driving factors for the growth of Collective Energy Initiatives',
+        // imageUrl: module2_bg,
+        description: 'A poster presenting citizen personas that can support the diffusion and growth of Collective Energy Initiatives in Europe by 2030',
+        href: 'https://encludeproject.eu/sites/default/files/2024-10/ENCLUDE%20FInal%20Event%20Posters_0%20%28dragged%29%204.pdf',
+        badges: [
+            {
+                title:"Academics",
+                color:"#4281A4"
+            },
+            {
+                title:"Policymakers",
+                color:"#EDB230"
+            }
+        ],
+        authors: [
+            "ENCLUDE"
+        ]
+    },
+    {
+        category: "Modelling",
+        title: 'Combining “people-centered” storylines with narratives of potential “future-world” evolutions',
+        // imageUrl: module2_bg,
+        description: 'A poster on transformative scenario design',
+        href: 'https://encludeproject.eu/sites/default/files/2024-10/ENCLUDE%20FInal%20Event%20Posters_0%20%28dragged%29%206.pdf',
+        badges: [
+            {
+                title:"Academics",
+                color:"#4281A4"
+            },
+            {
+                title:"Policymakers",
+                color:"#EDB230"
+            }
+        ],
+        authors: [
+            "ENCLUDE"
+        ]
+    },
+    {
+        category: "Modelling",
+        title: 'Citizen-led transitions towards justice and inclusivity',
+        // imageUrl: module2_bg,
+        description: 'A poster presenting the "green" rebranding of a Coal- and Carbon-Intensive Region in Greece',
+        href: 'https://encludeproject.eu/sites/default/files/2024-10/ENCLUDE%20FInal%20Event%20Posters_0%20%28dragged%29%205.pdf',
+        badges: [
+            {
+                title:"Academics",
+                color:"#4281A4"
+            },
+            {
+                title:"Policymakers",
+                color:"#EDB230"
+            }
+        ],
+        authors: [
+            "ENCLUDE"
+        ]
+    },
+    {
+        category: "Modelling",
+        title: 'People-centered and 100% renewable-based national energy systems',
+        // imageUrl: module2_bg,
+        description: 'A poster presenting the results of a modelling exercise for Greece',
+        href: 'https://encludeproject.eu/sites/default/files/2024-10/ENCLUDE%20FInal%20Event%20Posters_0%20%28dragged%29%208.pdf',
+        badges: [
+            {
+                title:"Academics",
+                color:"#4281A4"
+            },
+            {
+                title:"Policymakers",
+                color:"#EDB230"
+            }
+        ],
+        authors: [
+            "ENCLUDE"
+        ]
+    },
+    {
+        category: "Modelling",
+        title: '“Power to the People” transitions by 2050 in different European Union cities',
+        // imageUrl: module2_bg,
+        description: 'A poster presenting modelling results related to empowering prosumerism and citizen investments in photovoltaic and storage systems',
+        href: 'https://encludeproject.eu/sites/default/files/2024-10/ENCLUDE%20FInal%20Event%20Posters_0%20%28dragged%29%207.pdf',
+        badges: [
+            {
+                title:"Academics",
+                color:"#4281A4"
+            },
+            {
+                title:"Policymakers",
+                color:"#EDB230"
+            }
+        ],
+        authors: [
+            "ENCLUDE"
+        ]
+    },
+    {
+        category: "Modelling",
+        title: 'Decarbonization potential of strategic energy citizen clusters',
+        // imageUrl: module2_bg,
+        description: 'A poster on a study coupling machine learning clustering algorithms with energy simulation model',
+        href: 'https://encludeproject.eu/sites/default/files/2024-11/ENCLUDE%20FInal%20Event%20Posters%20%28dragged%29.pdf',
+        badges: [
+            {
+                title:"Academics",
+                color:"#4281A4"
+            },
+            {
+                title:"Policymakers",
+                color:"#EDB230"
+            }
+        ],
+        authors: [
+            "ENCLUDE"
+        ]
+    },
 ];
 
 
