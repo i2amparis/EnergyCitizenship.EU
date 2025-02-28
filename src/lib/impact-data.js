@@ -105,9 +105,9 @@ let impact_cards = [
     },
     {
         category: "Modelling",
-        title: 'Impacts of Collective Energy Initiatives in Europe by 2030',
+        title: 'Power to the People transitions in EU cities',
         // imageUrl: module2_bg,
-        description: 'Driving factors and citizen personas towards the further growth and diffusion of Collective Energy Initiatives in Europe by 2030',
+        description: 'Empowering prosumerism and citizen investments in photovoltaic and storage systems',
         href: 'https://iamparis.eu/results/enclude/power-to-the-people-transitions-in-eu-cities/policy_questions',
         badges: [
             {
