@@ -65,6 +65,66 @@ let impact_cards = [
     },
     {
         category: "Modelling",
+        title: 'People-centered national energy systems',
+        // imageUrl: module2_bg,
+        description: 'A study on people-centered and 100% renewable-based national energy systems in Greece',
+        href: 'https://iamparis.eu/results/enclude/people-centered-national-energy-systems/policy_questions',
+        badges: [
+            {
+                title:"Academics",
+                color:"#4281A4"
+            },
+            {
+                title:"Policymakers",
+                color:"#EDB230"
+            }
+        ],
+        authors: [
+            "ENCLUDE (hosted in IAMPARIS platform)"
+        ]
+    },
+    {
+        category: "Modelling",
+        title: 'Decarbonization potentials of energy citizens',
+        // imageUrl: module2_bg,
+        description: 'Coupling clustering algorithms with energy simulation models to explore the decarbonization potentials of energy citizens',
+        href: 'https://iamparis.eu/results/enclude/decarbonization-potentials-of-energy-citizens/policy_questions',
+        badges: [
+            {
+                title:"Academics",
+                color:"#4281A4"
+            },
+            {
+                title:"Policymakers",
+                color:"#EDB230"
+            }
+        ],
+        authors: [
+            "ENCLUDE (hosted in IAMPARIS platform)"
+        ]
+    },
+    {
+        category: "Modelling",
+        title: 'Impacts of Collective Energy Initiatives in Europe by 2030',
+        // imageUrl: module2_bg,
+        description: 'Driving factors and citizen personas towards the further growth and diffusion of Collective Energy Initiatives in Europe by 2030',
+        href: 'https://iamparis.eu/results/enclude/power-to-the-people-transitions-in-eu-cities/policy_questions',
+        badges: [
+            {
+                title:"Academics",
+                color:"#4281A4"
+            },
+            {
+                title:"Policymakers",
+                color:"#EDB230"
+            }
+        ],
+        authors: [
+            "ENCLUDE (hosted in IAMPARIS platform)"
+        ]
+    },
+    {
+        category: "Explore",
         title: 'Impact of energy citizenship on the local level',
         // imageUrl: module2_bg,
         description: 'A model-based analysis on the profitability of small-scale PV systems, on the growth of \
