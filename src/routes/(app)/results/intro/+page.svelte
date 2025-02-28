@@ -18,6 +18,7 @@
 <div class="flex m-auto place-content-center">
   <div class="max-w-md">
     <Toc
+      breakpoint={2000}
       --toc-desktop-aside-margin="10em 0 0 0"
       --toc-desktop-sticky-top="3em"
       --toc-desktop-width="2em"
