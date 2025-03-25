@@ -42,15 +42,15 @@
         <p>
             A notable example is the <strong>municipality</strong> of
             <strong>Megalopolis</strong>
-            in<strong> Greece</strong>. Originally rural, Megalopolis became a
+            in <strong>Greece</strong>. Originally rural, Megalopolis became a
             lignite mining hub in the 1970s, hosting 5 different lignite power
             plants over the years, which have been providing the local community
             with <strong>several job opportunities</strong> and have been
-            <strong>fostering </strong>the<strong> local economy</strong>. The
+            <strong>fostering</strong> the <strong>local economy</strong>. The
             2019 Greek National Energy and Climate Plan mandated phasing out
             lignite power plants by 2023, a very ambitious goal, which due to
             the extreme events of the past few years, led to a
-            <strong>new dependence </strong>on<strong> natural gas</strong>.
+            <strong>new dependence</strong> on <strong>natural gas</strong>.
             This planning risks long-term reliance on fossil fuels, leading to
             <em>higher energy costs</em>, <em>potential gas shortages</em>, and
             <em>delayed adoption</em> of green energy solutions.
@@ -331,7 +331,7 @@
         <p>
             In particular, under the “<em>Unified World</em>” scenario, annual
             costs seem to drop
-            <strong>below 1,000€ per household</strong><strong>by 2030</strong>
+            <strong>below 1,000€ per household</strong> <strong>by 2030</strong>
             and <strong>stay below</strong> €1,000 with a
             <strong>decreasing trend by 2050</strong>. Cumulative costs per
             household by 2050, mark savings <strong>up to 4x </strong>more than
@@ -372,8 +372,8 @@
         </h3>
         <p>
             When considering the environmental impact of the transition pathways
-            under study, projections on CO2 emissions serve as a key metric. The
-            following figures illustrate the evolution of the annual CO2
+            under study, projections on CO<sub>2</sub> emissions serve as a key metric. The
+            following figures illustrate the evolution of the annual CO<sub>2</sub>
             emissions under the 3 transition pathways under study.
         </p>
 
@@ -393,7 +393,7 @@
                 >Unified World”</em
             >
             scenario decarbonization is achieved at a much faster rate,
-            achieving CO2 emission reduction levels by 2030 that are attained
+            achieving CO<sub>2</sub> emission reduction levels by 2030 that are attained
             more than a decade later under the “<em>Familiar World”</em> scenario.
         </p>
     </article>
