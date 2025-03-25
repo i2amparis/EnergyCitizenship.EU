@@ -23,7 +23,7 @@
   const flatKeys = Object.assign({}, ...groupKeys);
   var unitName = flatKeys['Unit'] == 'ktoe/yr' ? 'Energy mix & savings (ktoe)' : '';
 
-  var groupedYears = groupYearsInTrashResultData(data);
+  var groupedYears = groupYearsInSecondResultData(data);
   let result = getFilteredData(groupedYears, groupKeys);
 
   let multiSeriesFlatData = flattenResultData(result)

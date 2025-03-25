@@ -5,6 +5,126 @@
 let impact_cards = [
     {
         category: "Modelling",
+        title: 'Scenario design for energy citizenship',
+        // imageUrl: module2_bg,
+        description: 'Combining “people-centered” with narratives of potential “future-world” evolutions towards transformative scenario design and the operationalization of energy citizenship',
+        href: '/results/intro',
+        badges: [
+            {
+                title:"Academics",
+                color:"#4281A4"
+            },
+            {
+                title:"Policymakers",
+                color:"#EDB230"
+            }
+        ],
+        authors: [
+            "ENCLUDE"
+        ]
+    },
+    {
+        category: "Modelling",
+        title: 'Citizen-led transitions towards justice and inclusivity',
+        // imageUrl: module2_bg,
+        description: 'A “green” rebranding of a Coal and Carbon Intensive Region into a city of the people, by the people, for the people',
+        href: '/results/result_bleed',
+        badges: [
+            {
+                title:"Academics",
+                color:"#4281A4"
+            },
+            {
+                title:"Policymakers",
+                color:"#EDB230"
+            }
+        ],
+        authors: [
+            "ENCLUDE"
+        ]
+    },
+    {
+        category: "Modelling",
+        title: 'Impacts of Collective Energy Initiatives in Europe by 2030',
+        // imageUrl: module2_bg,
+        description: 'Driving factors and citizen personas towards the further growth and diffusion of Collective Energy Initiatives in Europe by 2030',
+        href: '/results/result_animo',
+        badges: [
+            {
+                title:"Academics",
+                color:"#4281A4"
+            },
+            {
+                title:"Policymakers",
+                color:"#EDB230"
+            }
+        ],
+        authors: [
+            "ENCLUDE"
+        ]
+    },
+    {
+        category: "Modelling",
+        title: 'People-centered national energy systems',
+        // imageUrl: module2_bg,
+        description: 'A study on people-centered and 100% renewable-based national energy systems in Greece',
+        href: 'https://iamparis.eu/results/enclude/people-centered-national-energy-systems/policy_questions',
+        badges: [
+            {
+                title:"Academics",
+                color:"#4281A4"
+            },
+            {
+                title:"Policymakers",
+                color:"#EDB230"
+            }
+        ],
+        authors: [
+            "ENCLUDE (hosted in IAMPARIS platform)"
+        ]
+    },
+    {
+        category: "Modelling",
+        title: 'Decarbonization potentials of energy citizens',
+        // imageUrl: module2_bg,
+        description: 'Coupling clustering algorithms with energy simulation models to explore the decarbonization potentials of energy citizens',
+        href: 'https://iamparis.eu/results/enclude/decarbonization-potentials-of-energy-citizens/policy_questions',
+        badges: [
+            {
+                title:"Academics",
+                color:"#4281A4"
+            },
+            {
+                title:"Policymakers",
+                color:"#EDB230"
+            }
+        ],
+        authors: [
+            "ENCLUDE (hosted in IAMPARIS platform)"
+        ]
+    },
+    {
+        category: "Modelling",
+        title: 'Power to the People transitions in EU cities',
+        // imageUrl: module2_bg,
+        description: 'Empowering prosumerism and citizen investments in photovoltaic and storage systems',
+        href: 'https://iamparis.eu/results/enclude/power-to-the-people-transitions-in-eu-cities/policy_questions',
+        badges: [
+            {
+                title:"Academics",
+                color:"#4281A4"
+            },
+            {
+                title:"Policymakers",
+                color:"#EDB230"
+            }
+        ],
+        authors: [
+            "ENCLUDE (hosted in IAMPARIS platform)"
+        ]
+    },
+    {
+        category: "Explore",
         title: 'Impact of energy citizenship on the local level',
         // imageUrl: module2_bg,
         description: 'A model-based analysis on the profitability of small-scale PV systems, on the growth of \

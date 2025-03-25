@@ -18,6 +18,7 @@
 <div class="flex m-auto place-content-center">
   <div class="max-w-md">
     <Toc
+      breakpoint={2000}
       --toc-desktop-aside-margin="10em 0 0 0"
       --toc-desktop-sticky-top="3em"
       --toc-desktop-width="2em"
@@ -60,7 +61,7 @@
       >
       and <u>economic</u> considerations, often overlooking discussions on
       <strong>inclusive</strong>
-      and <strong>democratic</strong><em>governance</em>. This is also reflected
+      and <strong>democratic</strong> <em>governance</em>. This is also reflected
       in contemporary energy <em>modelling practices</em> and
       <em>scenario-based research</em>, where focus is primarily placed on the
       technological optimization and economic implications of the energy
@@ -74,7 +75,7 @@
       Underrepresentation of such elements combined with disproportionate
       emphasis on technoeconomic factors can lead to <strong
         >oversimplified</strong
-      ><strong>scenarios</strong> that fail to inform policymakers about the multiple
+      > <strong>scenarios</strong> that fail to inform policymakers about the multiple
       dimensions crucial for achieving a sustainable and inclusive energy transition.
       In this respect, there is a growing body of research seeking ways to integrate
       social sciences into scenario-based exploration.
@@ -100,9 +101,7 @@
     </p>
     <p>
       To build the <strong>scenario design framework</strong>, we started with
-      extensive desk research into various <strong>patterns </strong>and<strong>
-        trends
-      </strong>of<strong> energy citizenship</strong>. This allowed us to
+      extensive desk research into various <strong>patterns </strong> and <strong>trends</strong> of <strong>energy citizenship</strong>. This allowed us to
       capture and map the full range of citizen involvement in the energy
       transition. Considering stakeholders&rsquo; insights, we then grouped
       patterns and trends into <em>thematic storylines</em> that highlight both
@@ -145,10 +144,7 @@
       </li>
       <li>
         <p>
-          attributed to <strong>variance </strong>in both<strong>
-            individuals&rsquo; decisions
-          </strong>and<strong> choices </strong>and<strong>
-            surrounding environment&rsquo;s conditions</strong
+          attributed to <strong>variance</strong> in both <strong>individuals&rsquo; decisions</strong> and <strong> choices</strong> and <strong>surrounding environment&rsquo;s conditions</strong
           >, enabling deep exploratory assessments of different potential
           futures, also accounting for future uncertainties and unexpected
           events.
@@ -445,69 +441,62 @@
       </li>
       <li>
         <p>
-          <strong>Human Development </strong>&amp;<strong>
-            Social Equity</strong
+          <strong>Human Development</strong> &amp; <strong>Social Equity</strong
           >: Energy access, income inequality, education levels, etc.
         </p>
       </li>
       <li>
         <p>
-          <strong>Economic Evolution </strong>&amp;<strong>
-            Lifestyle Changes</strong
+          <strong>Economic Evolution</strong> &amp; <strong>Lifestyle Changes</strong
           >: GDP growth, income distribution, digital economy adoption, mobility
           patterns, etc.
         </p>
       </li>
       <li>
         <p>
-          <strong>Policies, Governance </strong>&amp;<strong>
-            Institutions</strong
+          <strong>Policies, Governance</strong> &amp; <strong>Institutions</strong
           >: Carbon pricing schemes, international climate agreements, renewable
           energy mandates, etc.
         </p>
       </li>
       <li>
         <p>
-          <strong>Technological Innovation </strong>&amp;<strong>
-            Adoption</strong
+          <strong>Technological Innovation</strong> &amp; <strong>Adoption</strong
           >: Adoption rates and advances in renewables, smart grid penetration,
           storage capacity, etc.
         </p>
       </li>
       <li>
         <p>
-          <strong>Environmental </strong>&amp;<strong>
-            Natural Resources</strong
+          <strong>Environmental</strong> &amp; <strong>Natural Resources</strong
           >: Resource availability, climate change impacts, biodiversity
           preservation, land use, etc.
         </p>
       </li>
       <li>
         <p>
-          <strong>Global Geopolitics </strong>&amp;<strong>
-            Energy Security</strong
+          <strong>Global Geopolitics</strong> &amp; <strong>Energy Security</strong
           >: Energy resource distribution, trade alliances, geopolitical
           tensions, energy supply chains, etc.
         </p>
       </li>
       <li>
         <p>
-          <strong>Behavioral Change </strong>&amp;<strong>
-            Public Engagement</strong
+          <strong>Behavioral Change</strong> &amp; <strong>Public Engagement</strong
           >: Public perception of climate change, technology adoption, societal
           shifts in energy behavior, etc.
         </p>
       </li>
       <li>
         <p>
-          <strong>Infrastructure </strong>&amp;<strong> Urbanization</strong>:
+          <strong>Infrastructure</strong> &amp; <strong>Urbanization</strong>:
           Grid modernization, electrification of transport, smart city
           development, urban planning, etc.
         </p>
       </li>
       <li>
         <p>
-          <strong>Global </strong>&amp;<strong> Local Energy Markets</strong>:
+          <strong>Global</strong> &amp; <strong>Local Energy Markets</strong>:
           Energy pricing, deregulation policies, decentralized energy trading,
           market liberalization, etc.
         </p>
