@@ -1,12 +1,26 @@
-<script>
-     import err_404 from '$lib/assets/404.png'
+<script lang="ts">
+	import { page } from '$app/state';
+	import Icon from '#lib/components/Icon.svelte';
+	import Logo from '#lib/components/Logo.svelte';
 </script>
 
-<!-- <div style="background-color:rgba(251,249,245,255);">
-<img class="ml-auto mr-auto" src={err_404} alt="download icon"/>
+<svelte:head><title>{page.status} · EnergyCitizenship.eu</title></svelte:head>
 
-</div> -->
-
-<div class="flex flex-col justify-center items-center bg-[#f9f8f7] ">
-     <img class="h-full w-full max-w-7xl" src={err_404} alt="download icon"/>
- </div>
+<section class="container-page grid min-h-[70vh] place-items-center py-24 text-center">
+	<div class="max-w-xl">
+		<div class="mx-auto w-fit scale-150"><Logo compact /></div>
+		<p class="kicker mt-12">Error {page.status}</p>
+		<h1 class="mt-3 text-4xl font-[460] md:text-6xl">
+			{page.status === 404 ? 'This page went off-grid' : 'Something went wrong'}
+		</h1>
+		<p class="mt-5 text-lg text-ink-soft">
+			{page.status === 404
+				? 'The page you are looking for does not exist, or has moved in the new version of the platform.'
+				: page.error?.message}
+		</p>
+		<div class="mt-8 flex flex-wrap justify-center gap-3">
+			<a href="/" class="btn btn-primary"><Icon name="arrow-left" size={18} /> Home</a>
+			<a href="/map" class="btn btn-ghost">Open the atlas</a>
+		</div>
+	</div>
+</section>
