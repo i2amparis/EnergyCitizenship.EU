@@ -1,6 +1,13 @@
-.DS_Store
 node_modules
+/build
 /.svelte-kit
 /package
-.env.local
-.pnpm-lock.yaml
+.DS_Store
+Thumbs.db
+
+# Environment: never commit secrets
+.env
+.env.*
+!.env.example
+
+vite.config.*.timestamp-*
